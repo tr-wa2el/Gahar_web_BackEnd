@@ -1,4 +1,4 @@
-# 🚀 GAHAR CMS - Backend Technical Specification (Advanced .NET 9 Architecture)
+# 🚀 GAHAR CMS - Backend Technical Specification (Advanced .NET 8 Architecture)
 
 ## 📋 Table of Contents
 1. [Architecture Overview](#architecture-overview)
@@ -15,7 +15,7 @@
 ## 🏗️ Architecture Overview
 
 ### Technology Stack
-- **Framework:** .NET 9 (Minimal APIs)
+- **Framework:** .NET 8 (Minimal APIs)
 - **Database:** PostgreSQL 16 / SQL Server 2022
 - **ORM:** Entity Framework Core 9
 - **Authentication:** ASP.NET Core Identity + JWT

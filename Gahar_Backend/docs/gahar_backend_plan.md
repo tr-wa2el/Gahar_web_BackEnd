@@ -1,8 +1,8 @@
-# 🧩 Backend Developers Work Plan – GAHAR CMS (Advanced .NET 9 Architecture)
+# 🧩 Backend Developers Work Plan – GAHAR CMS (Advanced .NET 8 Architecture)
 
 ## 📅 Duration: 5 Weeks + Sprint 0 (Preparation)
 ## 🎯 Objective:
-Build a **Dynamic & Scalable Headless CMS** based on **.NET 9** with an **Event-Driven Architecture**, allowing seamless integration with frontend frameworks like React or Next.js, and full multilingual (Arabic/English) support using the **Translation Table Pattern** for SEO optimization.
+Build a **Dynamic & Scalable Headless CMS** based on **.NET 8** with an **Event-Driven Architecture**, allowing seamless integration with frontend frameworks like React or Next.js, and full multilingual (Arabic/English) support using the **Translation Table Pattern** for SEO optimization.
 
 ---
 
@@ -14,7 +14,7 @@ Prepare the infrastructure and ensure the project is ready for team development.
 ### ⚙️ Tasks:
 1. **Project Setup**
    - Create a solution named `GAHAR.CMS` containing:
-     - `GAHAR.API` (Web API .NET 9 Minimal API)
+     - `GAHAR.API` (Web API .NET 8 Minimal API)
      - `GAHAR.Core` (Business Logic, Domain Models)
      - `GAHAR.Infrastructure` (EF Core, Repositories, Messaging)
      - `GAHAR.Shared` (Contracts & DTOs)
