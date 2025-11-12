@@ -68,8 +68,24 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<ITranslationService, TranslationService>();
 builder.Services.AddScoped<IAuditLogService, AuditLogService>();
 
+// CMS Services (Developer 1)
+builder.Services.AddScoped<IContentTypeService, ContentTypeService>();
+builder.Services.AddScoped<IContentService, ContentService>();
+builder.Services.AddScoped<ITagService, TagService>();
+builder.Services.AddScoped<ILayoutService, LayoutService>();
+builder.Services.AddScoped<IMediaService, MediaService>();
+builder.Services.AddScoped<IAlbumService, AlbumService>();
+
 // Register Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+// CMS Repositories (Developer 1)
+builder.Services.AddScoped<IContentTypeRepository, ContentTypeRepository>();
+builder.Services.AddScoped<IContentRepository, ContentRepository>();
+builder.Services.AddScoped<ITagRepository, TagRepository>();
+builder.Services.AddScoped<ILayoutRepository, LayoutRepository>();
+builder.Services.AddScoped<IMediaRepository, MediaRepository>();
+builder.Services.AddScoped<IAlbumRepository, AlbumRepository>();
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
