@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Gahar_Backend.Models.DTOs.Layout;
 
 /// <summary>
-/// DTO لعرض التخطيط
+/// DTO ???? ???????
 /// </summary>
 public class LayoutDto
 {
@@ -19,7 +19,7 @@ public class LayoutDto
 }
 
 /// <summary>
-/// DTO لعرض التخطيط بالتفاصيل الكاملة
+/// DTO ???? ??????? ????????? ???????
 /// </summary>
 public class LayoutDetailDto : LayoutDto
 {
@@ -27,18 +27,18 @@ public class LayoutDetailDto : LayoutDto
 }
 
 /// <summary>
-/// DTO لإنشاء تخطيط جديد
+/// DTO ?????? ????? ????
 /// </summary>
 public class CreateLayoutDto
 {
-    [Required(ErrorMessage = "الاسم مطلوب")]
+    [Required(ErrorMessage = "????? ?????")]
     [StringLength(100, MinimumLength = 2)]
     public string Name { get; set; } = string.Empty;
 
     [StringLength(500)]
     public string? Description { get; set; }
 
-  [Required(ErrorMessage = "الإعدادات مطلوبة")]
+  [Required(ErrorMessage = "????????? ??????")]
     public string Configuration { get; set; } = "{}";
 
     [StringLength(500)]
@@ -46,7 +46,7 @@ public class CreateLayoutDto
 }
 
 /// <summary>
-/// DTO لتحديث تخطيط
+/// DTO ?????? ?????
 /// </summary>
 public class UpdateLayoutDto : CreateLayoutDto
 {
@@ -54,7 +54,7 @@ public class UpdateLayoutDto : CreateLayoutDto
 }
 
 /// <summary>
-/// DTO لتعيين تخطيط افتراضي
+/// DTO ?????? ????? ???????
 /// </summary>
 public class SetDefaultLayoutDto
 {
@@ -63,7 +63,7 @@ public class SetDefaultLayoutDto
 }
 
 /// <summary>
-/// DTO لإعادة تخطيط المحتوى
+/// DTO ?????? ????? ???????
 /// </summary>
 public class BulkUpdateLayoutDto
 {

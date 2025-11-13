@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Gahar_Backend.Models.DTOs.Media;
 
 /// <summary>
-/// DTO لعرض الملف
+/// DTO ???? ?????
 /// </summary>
 public class MediaDto
 {
@@ -26,7 +26,7 @@ public class MediaDto
 }
 
 /// <summary>
-/// DTO لتحديث بيانات الملف
+/// DTO ?????? ?????? ?????
 /// </summary>
 public class UpdateMediaDto
 {
@@ -38,7 +38,7 @@ public class UpdateMediaDto
 }
 
 /// <summary>
-/// DTO لتصفية الملفات
+/// DTO ?????? ???????
 /// </summary>
 public class MediaFilterDto
 {
@@ -52,7 +52,7 @@ public class MediaFilterDto
 }
 
 /// <summary>
-/// DTO للألبوم
+/// DTO ???????
 /// </summary>
 public class AlbumDto
 {
@@ -69,7 +69,7 @@ public class AlbumDto
 }
 
 /// <summary>
-/// DTO لتفاصيل الألبوم
+/// DTO ??????? ???????
 /// </summary>
 public class AlbumDetailDto : AlbumDto
 {
@@ -78,7 +78,7 @@ public class AlbumDetailDto : AlbumDto
 }
 
 /// <summary>
-/// DTO لصورة في الألبوم
+/// DTO ????? ?? ???????
 /// </summary>
 public class AlbumMediaDto
 {
@@ -91,7 +91,7 @@ public class AlbumMediaDto
 }
 
 /// <summary>
-/// DTO لإنشاء ألبوم
+/// DTO ?????? ?????
 /// </summary>
 public class CreateAlbumDto
 {
@@ -110,7 +110,7 @@ public class CreateAlbumDto
 }
 
 /// <summary>
-/// DTO لتحديث ألبوم
+/// DTO ?????? ?????
 /// </summary>
 public class UpdateAlbumDto : CreateAlbumDto
 {
@@ -118,7 +118,7 @@ public class UpdateAlbumDto : CreateAlbumDto
 }
 
 /// <summary>
-/// DTO لإضافة صورة للألبوم
+/// DTO ?????? ???? ???????
 /// </summary>
 public class AddMediaToAlbumDto
 {
@@ -130,7 +130,7 @@ public class AddMediaToAlbumDto
 }
 
 /// <summary>
-/// DTO لإعادة ترتيب الصور
+/// DTO ?????? ????? ?????
 /// </summary>
 public class ReorderMediaDto
 {
@@ -139,7 +139,7 @@ public class ReorderMediaDto
 }
 
 /// <summary>
-/// DTO لتصفية الألبومات
+/// DTO ?????? ?????????
 /// </summary>
 public class AlbumFilterDto
 {

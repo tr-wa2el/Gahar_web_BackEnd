@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Gahar_Backend.Models.DTOs.Content;
 
 /// <summary>
-/// DTO لعرض المحتوى في القائمة
+/// DTO ???? ??????? ?? ???????
 /// </summary>
 public class ContentListDto
 {
@@ -23,7 +23,7 @@ public class ContentListDto
 }
 
 /// <summary>
-/// DTO لعرض المحتوى بالتفاصيل الكاملة
+/// DTO ???? ??????? ????????? ???????
 /// </summary>
 public class ContentDetailDto : ContentListDto
 {
@@ -35,7 +35,7 @@ public class ContentDetailDto : ContentListDto
 }
 
 /// <summary>
-/// DTO بسيط للمحتوى
+/// DTO ???? ???????
 /// </summary>
 public class ContentDto
 {
@@ -57,18 +57,18 @@ public class ContentDto
 }
 
 /// <summary>
-/// DTO لإنشاء محتوى جديد
+/// DTO ?????? ????? ????
 /// </summary>
 public class CreateContentDto
 {
-    [Required(ErrorMessage = "نوع المحتوى مطلوب")]
+    [Required(ErrorMessage = "??? ??????? ?????")]
     public int ContentTypeId { get; set; }
 
-  [Required(ErrorMessage = "العنوان مطلوب")]
+  [Required(ErrorMessage = "??????? ?????")]
     [StringLength(200, MinimumLength = 2)]
     public string Title { get; set; } = string.Empty;
 
-    [Required(ErrorMessage = "الكود المختصر مطلوب")]
+    [Required(ErrorMessage = "????? ??????? ?????")]
     [StringLength(200)]
     [RegularExpression(@"^[a-z0-9-]+$")]
     public string Slug { get; set; } = string.Empty;
@@ -117,14 +117,14 @@ public class CreateContentDto
 }
 
 /// <summary>
-/// DTO لتحديث محتوى
+/// DTO ?????? ?????
 /// </summary>
 public class UpdateContentDto : CreateContentDto
 {
 }
 
 /// <summary>
-/// DTO للترجمة
+/// DTO ???????
 /// </summary>
 public class ContentTranslationDto
 {
@@ -140,7 +140,7 @@ public class ContentTranslationDto
 }
 
 /// <summary>
-/// DTO للتصفية والبحث
+/// DTO ??????? ??????
 /// </summary>
 public class ContentFilterDto
 {
@@ -160,7 +160,7 @@ public class ContentFilterDto
 }
 
 /// <summary>
-/// DTO للوسم
+/// DTO ?????
 /// </summary>
 public class TagDto
 {
@@ -173,7 +173,7 @@ public class TagDto
 }
 
 /// <summary>
-/// DTO لإنشاء وسم
+/// DTO ?????? ???
 /// </summary>
 public class CreateTagDto
 {
@@ -194,7 +194,7 @@ public class CreateTagDto
 }
 
 /// <summary>
-/// نتيجة مرقمة
+/// ????? ?????
 /// </summary>
 public class PagedResult<T>
 {
