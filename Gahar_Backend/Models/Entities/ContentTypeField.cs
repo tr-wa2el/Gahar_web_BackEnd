@@ -1,83 +1,88 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Gahar_Backend.Models.Entities;
-
-/// <summary>
-/// حقل من حقول نوع المحتوى (مثل: تاريخ الفعالية، المكان، إلخ)
-/// </summary>
-public class ContentTypeField : TranslatableEntity
+namespace Gahar_Backend.Models.Entities
 {
     /// <summary>
-    /// معرف نوع المحتوى
+    /// Represents a custom field for a content type
     /// </summary>
-    public int ContentTypeId { get; set; }
-    public ContentType ContentType { get; set; } = null!;
+    public class ContentTypeField : TranslatableEntity
+    {
+   /// <summary>
+        /// ID of the parent content type
+    /// </summary>
+        public int ContentTypeId { get; set; }
+    
+        /// <summary>
+   /// Navigation property to parent content type
+        /// </summary>
+  public ContentType ContentType { get; set; } = null!;
 
-    /// <summary>
-    /// اسم الحقل
-    /// </summary>
-    [Required]
+  /// <summary>
+  /// Display name of the field (e.g., "Event Date", "Location")
+        /// </summary>
+     [Required]
     [StringLength(100)]
-    public string Name { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
 
     /// <summary>
-    /// مفتاح الحقل (بدون مسافات - للبرمجة)
-    /// </summary>
-    [Required]
-    [StringLength(100)]
-    public string FieldKey { get; set; } = string.Empty;
+ /// Unique key for the field (e.g., "event_date", "location")
+     /// </summary>
+        [Required]
+        [StringLength(100)]
+        public string FieldKey { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Type of the field (Text, Textarea, RichText, Date, Image, File, etc.)
+      /// </summary>
+        [Required]
+        [StringLength(50)]
+        public string FieldType { get; set; } = string.Empty;
+
+        /// <summary>
+  /// Description/Help text for the field
+        /// </summary>
+        [StringLength(500)]
+        public string? Description { get; set; }
+
+  /// <summary>
+     /// Indicates if this field is required
+      /// </summary>
+        public bool IsRequired { get; set; } = false;
+
+        /// <summary>
+        /// Indicates if this field supports translation
+        /// </summary>
+        public bool IsTranslatable { get; set; } = true;
+
+        /// <summary>
+ /// Indicates if this field should be shown in content list
+        /// </summary>
+     public bool ShowInList { get; set; } = true;
+
+      /// <summary>
+        /// Display order in the form
+        /// </summary>
+        public int DisplayOrder { get; set; }
+
+      /// <summary>
+        /// JSON validation rules (e.g., {"minLength": 10, "maxLength": 500})
+        /// </summary>
+        public string? ValidationRules { get; set; }
 
     /// <summary>
-    /// نوع الحقل (Text, Textarea, RichText, Date, Number, Image, File, Select, Radio, Checkbox)
-    /// </summary>
-    [Required]
-    [StringLength(50)]
-    public string FieldType { get; set; } = string.Empty;
+        /// Default value for the field
+        /// </summary>
+        public string? DefaultValue { get; set; }
 
-    /// <summary>
-    /// وصف الحقل
-    /// </summary>
-    [StringLength(500)]
-    public string? Description { get; set; }
+ /// <summary>
+        /// Placeholder text for the input
+        /// </summary>
+        [StringLength(500)]
+        public string? Placeholder { get; set; }
 
-    /// <summary>
-    /// هل الحقل مطلوب
-    /// </summary>
-    public bool IsRequired { get; set; } = false;
-
-    /// <summary>
-    /// هل يمكن ترجمة هذا الحقل
- /// </summary>
-    public bool IsTranslatable { get; set; } = true;
-
-    /// <summary>
- /// هل يظهر في قائمة المحتوى
-    /// </summary>
-    public bool ShowInList { get; set; } = true;
-
-    /// <summary>
-    /// ترتيب الحقل
-    /// </summary>
-    public int DisplayOrder { get; set; }
-
-    /// <summary>
-    /// قواعد التحقق من الصحة (JSON)
-    /// </summary>
-    public string? ValidationRules { get; set; }
-
-    /// <summary>
-    /// القيمة الافتراضية
-    /// </summary>
-    public string? DefaultValue { get; set; }
-
-    /// <summary>
-    /// النص الذي يظهر في الحقل الفارغ
-    /// </summary>
-    [StringLength(500)]
-    public string? Placeholder { get; set; }
-
-    /// <summary>
-    /// خيارات الحقل للـ Select, Radio, Checkbox (JSON)
-    /// </summary>
-    public string? Options { get; set; }
+        /// <summary>
+    /// Options for Dropdown, Radio, Checkbox fields (JSON array)
+     /// </summary>
+        public string? Options { get; set; }
+    }
 }

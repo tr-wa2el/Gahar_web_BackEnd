@@ -1,46 +1,42 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Gahar_Backend.Models.Entities;
-
-/// <summary>
-/// التخطيط - يحدد كيفية عرض المحتوى
-/// </summary>
-public class Layout : TranslatableEntity
+namespace Gahar_Backend.Models.Entities
 {
     /// <summary>
-    /// اسم التخطيط
- /// </summary>
-    [Required]
-  [StringLength(100)]
-    public string Name { get; set; } = string.Empty;
-
-    /// <summary>
-    /// وصف التخطيط
+    /// Represents a page layout configuration for content display
     /// </summary>
-    [StringLength(500)]
-    public string? Description { get; set; }
-
-    /// <summary>
-    /// إعدادات التخطيط (JSON)
-    /// </summary>
-    public string Configuration { get; set; } = "{}";
-
-    /// <summary>
-    /// هل هذا التخطيط الافتراضي
-    /// </summary>
-  public bool IsDefault { get; set; } = false;
-
- /// <summary>
-    /// هل التخطيط نشط
-    /// </summary>
-    public bool IsActive { get; set; } = true;
-
-/// <summary>
-    /// صورة معاينة التخطيط
-    /// </summary>
-    [StringLength(500)]
-    public string? PreviewImage { get; set; }
-
-    // Navigation Properties
-    public ICollection<Content> Contents { get; set; } = new List<Content>();
+    public class Layout : TranslatableEntity
+    {
+        [Required]
+        [StringLength(100)]
+        public string Name { get; set; } = string.Empty;
+        
+        [StringLength(500)]
+        public string? Description { get; set; }
+    
+        /// <summary>
+        /// JSON configuration for the layout
+        /// </summary>
+        [Required]
+        public string Configuration { get; set; } = "{}";
+        
+        /// <summary>
+        /// Indicates if this is the default layout
+        /// </summary>
+        public bool IsDefault { get; set; } = false;
+        
+        /// <summary>
+        /// Indicates if the layout is active
+        /// </summary>
+        public bool IsActive { get; set; } = true;
+        
+        /// <summary>
+        /// URL or path to preview image
+        /// </summary>
+        [StringLength(500)]
+        public string? PreviewImage { get; set; }
+        
+        // Navigation properties
+        public ICollection<Content> Contents { get; set; } = new List<Content>();
+    }
 }

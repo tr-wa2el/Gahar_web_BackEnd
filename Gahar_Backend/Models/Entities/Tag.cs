@@ -1,50 +1,46 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Gahar_Backend.Models.Entities;
-
-/// <summary>
-/// وسم (Tag) لتصنيف وتنظيم المحتوى
-/// </summary>
-public class Tag : TranslatableEntity
+namespace Gahar_Backend.Models.Entities
 {
     /// <summary>
-    /// اسم الوسم
+    /// Represents a tag for categorizing content
     /// </summary>
-    [Required]
-    [StringLength(100)]
-    public string Name { get; set; } = string.Empty;
+    public class Tag : TranslatableEntity
+    {
+        /// <summary>
+        /// Tag name
+        /// </summary>
+        [Required]
+        [StringLength(100)]
+        public string Name { get; set; } = string.Empty;
 
-  /// <summary>
-    /// الكود المختصر للوسم
-    /// </summary>
-    [Required]
-    [StringLength(100)]
-    public string Slug { get; set; } = string.Empty;
+        /// <summary>
+        /// URL-friendly slug
+        /// </summary>
+        [Required]
+        [StringLength(100)]
+        public string Slug { get; set; } = string.Empty;
 
-    /// <summary>
-  /// وصف الوسم
-  /// </summary>
-    [StringLength(500)]
-    public string? Description { get; set; }
+        /// <summary>
+        /// Tag description
+        /// </summary>
+        [StringLength(500)]
+        public string? Description { get; set; }
 
-    /// <summary>
-    /// لون الوسم (Hex)
-    /// </summary>
-    [StringLength(7)]
-    public string? Color { get; set; }
+        /// <summary>
+        /// Tag color for UI display
+        /// </summary>
+        [StringLength(20)]
+        public string? Color { get; set; }
 
-    // Navigation Properties
-    public ICollection<ContentTag> ContentTags { get; set; } = new List<ContentTag>();
-}
+        /// <summary>
+        /// Number of times this tag has been used
+        /// </summary>
+        public int UsageCount { get; set; } = 0;
 
-/// <summary>
-/// ربط بين المحتوى والوسم
-/// </summary>
-public class ContentTag : BaseEntity
-{
-    public int ContentId { get; set; }
-    public Content Content { get; set; } = null!;
-
-    public int TagId { get; set; }
-    public Tag Tag { get; set; } = null!;
+        /// <summary>
+        /// Content items with this tag
+        /// </summary>
+        public ICollection<ContentTag> ContentTags { get; set; } = new List<ContentTag>();
+    }
 }

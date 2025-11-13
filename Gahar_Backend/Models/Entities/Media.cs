@@ -1,101 +1,89 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Gahar_Backend.Models.Entities;
-
-/// <summary>
-/// نموذج الملف المرفوع (صورة، فيديو، مستند، إلخ)
-/// </summary>
-public class Media : BaseEntity
+namespace Gahar_Backend.Models.Entities
 {
     /// <summary>
-    /// اسم الملف الأصلي
+  /// Represents a media file (image, video, document, audio)
     /// </summary>
-    [Required]
-    [StringLength(200)]
-    public string FileName { get; set; } = string.Empty;
+    public class Media : BaseEntity
+    {
+        [Required]
+   [StringLength(255)]
+        public string FileName { get; set; } = string.Empty;
 
-    /// <summary>
-    /// مسار الملف الأصلي
-    /// </summary>
-    [Required]
-    [StringLength(500)]
+        /// <summary>
+        /// Original file path relative to wwwroot
+  /// </summary>
+        [Required]
+   [StringLength(500)]
     public string FilePath { get; set; } = string.Empty;
 
-    /// <summary>
-    /// مسار الصورة المصغرة (للصور فقط)
-    /// </summary>
+        /// <summary>
+      /// Thumbnail path (for images only)
+     /// </summary>
     [StringLength(500)]
-    public string? ThumbnailPath { get; set; }
+        public string? ThumbnailPath { get; set; }
 
-    /// <summary>
-    /// مسار نسخة WebP (للصور)
-    /// </summary>
-    [StringLength(500)]
-    public string? WebPPath { get; set; }
+        /// <summary>
+     /// WebP version path (for images only)
+        /// </summary>
+     [StringLength(500)]
+ public string? WebPPath { get; set; }
 
-    /// <summary>
-    /// نوع MIME
-    /// </summary>
-    [Required]
-    [StringLength(100)]
-    public string MimeType { get; set; } = string.Empty;
+        [Required]
+        [StringLength(50)]
+     public string MimeType { get; set; } = string.Empty;
 
-    /// <summary>
-    /// حجم الملف بالبايتات
-    /// </summary>
-    public long FileSize { get; set; }
+        /// <summary>
+  /// File size in bytes
+        /// </summary>
+  public long FileSize { get; set; }
 
-    /// <summary>
-  /// حجم ملف WebP
-    /// </summary>
+        /// <summary>
+        /// WebP file size in bytes (for images only)
+  /// </summary>
     public long? WebPFileSize { get; set; }
 
-    /// <summary>
-    /// عرض الصورة
-/// </summary>
-public int? Width { get; set; }
+        /// <summary>
+/// Image width in pixels (for images only)
+        /// </summary>
+   public int? Width { get; set; }
 
-    /// <summary>
-    /// ارتفاع الصورة
-    /// </summary>
+        /// <summary>
+        /// Image height in pixels (for images only)
+   /// </summary>
     public int? Height { get; set; }
 
-    /// <summary>
-    /// نص ALT للصورة
-    /// </summary>
-    [StringLength(200)]
-    public string? Alt { get; set; }
+        /// <summary>
+ /// Alt text for images
+     /// </summary>
+        [StringLength(500)]
+      public string? Alt { get; set; }
 
- /// <summary>
-    /// تعليق على الملف
-    /// </summary>
-    [StringLength(500)]
-    public string? Caption { get; set; }
+        /// <summary>
+        /// Media type: Image, Video, Document, Audio
+        /// </summary>
+        [Required]
+        [StringLength(50)]
+     public string MediaType { get; set; } = string.Empty;
 
-    /// <summary>
-    /// نوع الملف (Image, Video, Document, Audio)
-    /// </summary>
-    [StringLength(50)]
-    public string MediaType { get; set; } = "Document";
+        /// <summary>
+        /// User ID who uploaded the file
+      /// </summary>
+        public int? UploadedBy { get; set; }
 
-    /// <summary>
-    /// معرف المستخدم الذي رفع الملف
-    /// </summary>
-  public int? UploadedBy { get; set; }
-    public User? Uploader { get; set; }
+        /// <summary>
+        /// Whether the file has been processed (thumbnail + WebP created)
+        /// </summary>
+   public bool IsProcessed { get; set; } = false;
 
-    /// <summary>
-    /// هل تم معالجة الملف (تحويل لـ WebP مثلاً)
-    /// </summary>
-    public bool IsProcessed { get; set; } = false;
+        /// <summary>
+        /// Original file extension
+        /// </summary>
+     [StringLength(10)]
+   public string FileExtension { get; set; } = string.Empty;
 
-    /// <summary>
-    /// تاريخ انتهاء المعالجة
-    /// </summary>
-    public DateTime? ProcessedAt { get; set; }
-
-    /// <summary>
-/// عدد مرات استخدام هذا الملف
-    /// </summary>
-    public int UsageCount { get; set; } = 0;
+        // Navigation properties
+        public User? UploadedByUser { get; set; }
+    }
 }
