@@ -37,6 +37,12 @@ public static class Permissions
     public const string MenusDelete = "Menus.Delete";
     public const string MenusPublish = "Menus.Publish";
 
+    // Layouts
+    public const string LayoutsView = "Layouts.View";
+    public const string LayoutsCreate = "Layouts.Create";
+    public const string LayoutsEdit = "Layouts.Edit";
+    public const string LayoutsDelete = "Layouts.Delete";
+
     // Facilities
     public const string FacilitiesView = "Facilities.View";
     public const string FacilitiesCreate = "Facilities.Create";

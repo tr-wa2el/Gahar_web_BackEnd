@@ -40,7 +40,7 @@ public DbSet<Facility> Facilities { get; set; }
   public DbSet<FacilityImage> FacilityImages { get; set; }
    public DbSet<FacilityReview> FacilityReviews { get; set; }
 
-        // Feature 5: Certificates Management
+   // Feature 5: Certificates Management
  public DbSet<Certificate> Certificates { get; set; }
   public DbSet<CertificateCategory> CertificateCategories { get; set; }
  public DbSet<CertificateRequirement> CertificateRequirements { get; set; }
@@ -52,6 +52,19 @@ public DbSet<Facility> Facilities { get; set; }
     public DbSet<AnalyticsEvent> AnalyticsEvents { get; set; }
     public DbSet<Keyword> Keywords { get; set; }
 
+        // Feature 7: Content Management
+      public DbSet<Content> Contents { get; set; }
+   public DbSet<ContentTag> ContentTags { get; set; }
+        public DbSet<ContentFieldValue> ContentFieldValues { get; set; }
+
+     // Feature 8: Layout Management
+        public DbSet<Layout> Layouts { get; set; }
+
+        // Feature 9: Media & Album Management
+public DbSet<Media> Media { get; set; }
+        public DbSet<Album> Albums { get; set; }
+public DbSet<AlbumMedia> AlbumMedias { get; set; }
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
      {
             base.OnModelCreating(modelBuilder);
