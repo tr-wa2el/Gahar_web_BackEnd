@@ -67,6 +67,10 @@ public DbSet<Facility> Facilities { get; set; }
         public DbSet<Media> Media { get; set; }
         public DbSet<Album> Albums { get; set; }
    public DbSet<AlbumMedia> AlbumMedias { get; set; }
+
+        // Feature 10: Short Links with QR Code
+        public DbSet<ShortLink> ShortLinks { get; set; }
+        public DbSet<ShortLinkAnalytics> ShortLinkAnalytics { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
      {

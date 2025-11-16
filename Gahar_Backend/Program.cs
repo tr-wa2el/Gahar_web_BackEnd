@@ -10,6 +10,7 @@ using Gahar_Backend.Repositories.Implementations;
 using Gahar_Backend.Middleware;
 using Gahar_Backend.Utilities;
 using StackExchange.Redis;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,9 @@ builder.Services.AddControllers();
 
 // HttpContextAccessor
 builder.Services.AddHttpContextAccessor();
+
+// AutoMapper
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 // Database
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -86,6 +90,10 @@ builder.Services.AddScoped<ICertificateService, CertificateService>();
 // Feature 6: SEO & Analytics Services
 builder.Services.AddScoped<ISeoAnalyticsService, SeoAnalyticsService>();
 
+// Feature 10: Short Links with QR Code
+builder.Services.AddScoped<IShortLinkService, ShortLinkService>();
+builder.Services.AddScoped<IQrCodeService, QrCodeService>();
+
 // Register Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
@@ -120,6 +128,16 @@ builder.Services.AddScoped<ISeoMetadataRepository, SeoMetadataRepository>();
 builder.Services.AddScoped<IPageAnalyticsRepository, PageAnalyticsRepository>();
 builder.Services.AddScoped<IAnalyticsEventRepository, AnalyticsEventRepository>();
 builder.Services.AddScoped<IKeywordRepository, KeywordRepository>();
+
+// Feature 10: Short Links Repositories
+builder.Services.AddScoped<IShortLinkRepository, ShortLinkRepository>();
+builder.Services.AddScoped<IShortLinkAnalyticsRepository, ShortLinkAnalyticsRepository>();
+
+// Add HttpClientFactory for QR Code service
+builder.Services.AddHttpClient();
+
+// Rate Limiting Service
+builder.Services.AddScoped<IRateLimitService, RateLimitService>();
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -187,6 +205,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseCors("AllowFrontend");
+
+app.UseRateLimiting(); // Rate Limiting Middleware - يجب أن يكون قبل الـ Authentication
 
 // Exception Handling Middleware
 app.UseMiddleware<ExceptionHandlingMiddleware>();
