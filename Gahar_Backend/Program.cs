@@ -68,8 +68,58 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<ITranslationService, TranslationService>();
 builder.Services.AddScoped<IAuditLogService, AuditLogService>();
 
+// Feature 1: Page Builder Services
+builder.Services.AddScoped<IPageService, PageService>();
+
+// Feature 2: Form Builder Services
+builder.Services.AddScoped<IFormService, FormService>();
+
+// Feature 3: Navigation Menu Services
+builder.Services.AddScoped<IMenuService, MenuService>();
+
+// Feature 4: Facilities Management Services
+builder.Services.AddScoped<IFacilityService, FacilityService>();
+
+// Feature 5: Certificates Management Services
+builder.Services.AddScoped<ICertificateService, CertificateService>();
+
+// Feature 6: SEO & Analytics Services
+builder.Services.AddScoped<ISeoAnalyticsService, SeoAnalyticsService>();
+
 // Register Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+// Feature 1: Page Builder Repositories
+builder.Services.AddScoped<IPageRepository, PageRepository>();
+builder.Services.AddScoped<IPageBlockRepository, PageBlockRepository>();
+
+// Feature 2: Form Builder Repositories
+builder.Services.AddScoped<IFormRepository, FormRepository>();
+builder.Services.AddScoped<IFormFieldRepository, FormFieldRepository>();
+builder.Services.AddScoped<IFormSubmissionRepository, FormSubmissionRepository>();
+
+// Feature 3: Navigation Menu Repositories
+builder.Services.AddScoped<IMenuRepository, MenuRepository>();
+builder.Services.AddScoped<IMenuItemRepository, MenuItemRepository>();
+
+// Feature 4: Facilities Management Repositories
+builder.Services.AddScoped<IFacilityRepository, FacilityRepository>();
+builder.Services.AddScoped<IFacilityDepartmentRepository, FacilityDepartmentRepository>();
+builder.Services.AddScoped<IFacilityServiceRepository, FacilityServiceRepository>();
+builder.Services.AddScoped<IFacilityImageRepository, FacilityImageRepository>();
+builder.Services.AddScoped<IFacilityReviewRepository, FacilityReviewRepository>();
+
+// Feature 5: Certificates Management Repositories
+builder.Services.AddScoped<ICertificateRepository, CertificateRepository>();
+builder.Services.AddScoped<ICertificateCategoryRepository, CertificateCategoryRepository>();
+builder.Services.AddScoped<ICertificateRequirementRepository, CertificateRequirementRepository>();
+builder.Services.AddScoped<ICertificateHolderRepository, CertificateHolderRepository>();
+
+// Feature 6: SEO & Analytics Repositories
+builder.Services.AddScoped<ISeoMetadataRepository, SeoMetadataRepository>();
+builder.Services.AddScoped<IPageAnalyticsRepository, PageAnalyticsRepository>();
+builder.Services.AddScoped<IAnalyticsEventRepository, AnalyticsEventRepository>();
+builder.Services.AddScoped<IKeywordRepository, KeywordRepository>();
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
