@@ -15,87 +15,107 @@ namespace Gahar_Backend.Repositories.Implementations
         }
 
         /// <summary>
+        /// Override GetAllAsync to filter out soft-deleted layouts
+        /// </summary>
+        public override async Task<IEnumerable<Layout>> GetAllAsync()
+        {
+            return await _context.Layouts
+                .Where(l => !l.IsDeleted)
+                .OrderByDescending(l => l.IsDefault)
+                .ThenBy(l => l.Name)
+                .ToListAsync();
+        }
+
+        /// <summary>
         /// Gets the default layout
         /// </summary>
         public async Task<Layout?> GetDefaultLayoutAsync()
         {
-   return await _context.Layouts
-        .FirstOrDefaultAsync(l => l.IsDefault && l.IsActive);
-     }
-
-        /// <summary>
-    /// Gets layout by name
- /// </summary>
-        public async Task<Layout?> GetByNameAsync(string name)
-  {
-   return await _context.Layouts
-     .FirstOrDefaultAsync(l => l.Name == name);
+            return await _context.Layouts
+                .Where(l => !l.IsDeleted)
+                .FirstOrDefaultAsync(l => l.IsDefault && l.IsActive);
         }
 
-      /// <summary>
+        /// <summary>
+        /// Gets layout by name
+        /// </summary>
+        public async Task<Layout?> GetByNameAsync(string name)
+        {
+            return await _context.Layouts
+                .Where(l => !l.IsDeleted)
+                .FirstOrDefaultAsync(l => l.Name == name);
+        }
+
+        /// <summary>
         /// Checks if a layout name exists
         /// </summary>
-     public async Task<bool> NameExistsAsync(string name, int? excludeId = null)
-   {
-            var query = _context.Layouts.Where(l => l.Name == name);
+        public async Task<bool> NameExistsAsync(string name, int? excludeId = null)
+        {
+            var query = _context.Layouts.Where(l => !l.IsDeleted && l.Name == name);
 
-   if (excludeId.HasValue)
+            if (excludeId.HasValue)
             {
-     query = query.Where(l => l.Id != excludeId.Value);
+                query = query.Where(l => l.Id != excludeId.Value);
             }
 
-   return await query.AnyAsync();
+            return await query.AnyAsync();
         }
 
         /// <summary>
         /// Gets all active layouts
         /// </summary>
         public async Task<IEnumerable<Layout>> GetActiveLayoutsAsync()
- {
+        {
             return await _context.Layouts
-                .Where(l => l.IsActive)
+                .Where(l => !l.IsDeleted && l.IsActive)
                 .OrderByDescending(l => l.IsDefault)
-            .ThenBy(l => l.Name)
-   .ToListAsync();
+                .ThenBy(l => l.Name)
+                .ToListAsync();
         }
 
-    /// <summary>
+        /// <summary>
         /// Sets a layout as default (and unsets others)
         /// </summary>
         public async Task SetAsDefaultAsync(int layoutId)
         {
-     // First, unset all other defaults
-   var defaultLayout = await _context.Layouts.FirstOrDefaultAsync(l => l.IsDefault);
+            // First, unset all other defaults
+            var defaultLayout = await _context.Layouts
+                .Where(l => !l.IsDeleted)
+                .FirstOrDefaultAsync(l => l.IsDefault);
             if (defaultLayout != null)
-  {
-       defaultLayout.IsDefault = false;
-      }
+            {
+                defaultLayout.IsDefault = false;
+            }
 
             // Then set the new default
-   var layout = await _context.Layouts.FirstOrDefaultAsync(l => l.Id == layoutId);
-   if (layout != null)
-        {
- layout.IsDefault = true;
- }
+            var layout = await _context.Layouts
+                .Where(l => !l.IsDeleted)
+                .FirstOrDefaultAsync(l => l.Id == layoutId);
+            if (layout != null)
+            {
+                layout.IsDefault = true;
+            }
 
-         await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
         }
 
         /// <summary>
-    /// Gets layout with content count
+        /// Gets layout with content count
         /// </summary>
         public async Task<(Layout layout, int contentCount)> GetLayoutWithStatsAsync(int layoutId)
         {
-            var layout = await GetByIdAsync(layoutId);
+            var layout = await _context.Layouts
+                .Where(l => !l.IsDeleted)
+                .FirstOrDefaultAsync(l => l.Id == layoutId);
 
             // Return null layout so the service can handle it
             if (layout == null)
             {
-          return (null!, 0);
+                return (null!, 0);
             }
 
             var contentCount = await _context.Contents
-   .CountAsync(c => c.LayoutId == layoutId);
+                .CountAsync(c => c.LayoutId == layoutId && !c.IsDeleted);
 
             return (layout, contentCount);
         }

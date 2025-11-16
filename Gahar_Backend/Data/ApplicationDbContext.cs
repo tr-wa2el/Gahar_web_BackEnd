@@ -53,7 +53,10 @@ public DbSet<Facility> Facilities { get; set; }
     public DbSet<Keyword> Keywords { get; set; }
 
         // Feature 7: Content Management
-      public DbSet<Content> Contents { get; set; }
+        public DbSet<ContentType> ContentTypes { get; set; }
+     public DbSet<ContentTypeField> ContentTypeFields { get; set; }
+        public DbSet<Content> Contents { get; set; }
+   public DbSet<Tag> Tags { get; set; }
    public DbSet<ContentTag> ContentTags { get; set; }
         public DbSet<ContentFieldValue> ContentFieldValues { get; set; }
 
@@ -61,9 +64,9 @@ public DbSet<Facility> Facilities { get; set; }
         public DbSet<Layout> Layouts { get; set; }
 
         // Feature 9: Media & Album Management
-public DbSet<Media> Media { get; set; }
+        public DbSet<Media> Media { get; set; }
         public DbSet<Album> Albums { get; set; }
-public DbSet<AlbumMedia> AlbumMedias { get; set; }
+   public DbSet<AlbumMedia> AlbumMedias { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
      {
