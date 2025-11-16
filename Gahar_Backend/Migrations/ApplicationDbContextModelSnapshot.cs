@@ -17,12 +17,12 @@ namespace Gahar_Backend.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.0")
+                .HasAnnotation("ProductVersion", "8.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Album", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.AnalyticsEvent", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,115 +30,85 @@ namespace Gahar_Backend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("CoverImageId")
-                        .HasColumnType("int");
+                    b.Property<string>("BrowserName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("CityName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("CountryCode")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("CreatedBy")
-                        .HasColumnType("int");
-
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                    b.Property<string>("DeviceType")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsPublished")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
-
-                    b.Property<DateTime?>("PublishedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Slug")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("ViewCount")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(0);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CoverImageId");
-
-                    b.HasIndex("CreatedAt");
-
-                    b.HasIndex("CreatedBy");
-
-                    b.HasIndex("IsPublished");
-
-                    b.HasIndex("Slug")
-                        .IsUnique();
-
-                    b.ToTable("Albums", (string)null);
-                });
-
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.AlbumMedia", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AlbumId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Caption")
+                    b.Property<string>("EventData")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("EventType")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("DisplayOrder")
-                        .HasColumnType("int");
+                    b.Property<string>("IpAddress")
+                        .HasMaxLength(45)
+                        .HasColumnType("nvarchar(45)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("IsFeatured")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
+                    b.Property<string>("OsName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("MediaId")
-                        .HasColumnType("int");
+                    b.Property<string>("PageUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SessionId")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("SourceName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("UserAgent")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("DisplayOrder");
+                    b.HasIndex("CreatedAt")
+                        .IsDescending();
 
-                    b.HasIndex("MediaId");
+                    b.HasIndex("EventType");
 
-                    b.HasIndex("AlbumId", "MediaId")
-                        .IsUnique();
+                    b.HasIndex("PageUrl");
 
-                    b.ToTable("AlbumMedias", (string)null);
+                    b.HasIndex("SessionId");
+
+                    b.HasIndex("UserId", "CreatedAt")
+                        .IsDescending(false, true);
+
+                    b.ToTable("AnalyticsEvents", (string)null);
                 });
 
             modelBuilder.Entity("Gahar_Backend.Models.Entities.AuditLog", b =>
@@ -215,7 +185,7 @@ namespace Gahar_Backend.Migrations
                     b.ToTable("AuditLogs", (string)null);
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Content", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Certificate", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -223,70 +193,61 @@ namespace Gahar_Backend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("AllowComments")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(true);
-
                     b.Property<int?>("AuthorId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Body")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ContentTypeId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETUTCDATE()");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("FeaturedImage")
+                    b.Property<string>("Description")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DocumentUrl")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime?>("ExpiryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ImageUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("IsFeatured")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
+                    b.Property<bool>("IsExpired")
+                        .HasColumnType("bit");
 
-                    b.Property<int?>("LayoutId")
-                        .HasColumnType("int");
+                    b.Property<bool>("IsPublished")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("MetaDescription")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                    b.Property<bool>("IsRenewable")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("MetaKeywords")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime?>("IssueDate")
+                        .HasColumnType("datetime2");
 
-                    b.Property<string>("MetaTitle")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                    b.Property<string>("IssuingBody")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("OgDescription")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("OgImage")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("OgTitle")
+                    b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
                     b.Property<DateTime?>("PublishedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("ScheduledAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Slug")
@@ -294,15 +255,538 @@ namespace Gahar_Backend.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasDefaultValue("Draft");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
-                    b.Property<string>("Summary")
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("Slug")
+                        .IsUnique();
+
+                    b.ToTable("Certificates", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.CertificateCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CertificateId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CertificateId", "DisplayOrder");
+
+                    b.ToTable("CertificateCategories", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.CertificateHolder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CertificateId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CertificateUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ExpiryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("HolderEmail")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("HolderName")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsExpired")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsVerified")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("IssueDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("RegistrationNumber")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("VerificationNotes")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HolderEmail");
+
+                    b.HasIndex("RegistrationNumber");
+
+                    b.HasIndex("CertificateId", "CreatedAt")
+                        .IsDescending(false, true);
+
+                    b.ToTable("CertificateHolders", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.CertificateRequirement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CertificateId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsOptional")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Requirement")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CertificateId", "DisplayOrder");
+
+                    b.ToTable("CertificateRequirements", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Facility", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AccreditationStatus")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Address")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int?>("AuthorId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("AverageWaitTime")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("DirectorName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsPublished")
+                        .HasColumnType("bit");
+
+                    b.Property<double?>("Latitude")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("Longitude")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<DateTime?>("PublishedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int?>("TotalBeds")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Website")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("Slug")
+                        .IsUnique();
+
+                    b.ToTable("Facilities", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FacilityDepartment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FacilityId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("HeadName")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FacilityId", "DisplayOrder");
+
+                    b.ToTable("FacilityDepartments", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FacilityImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Caption")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FacilityId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsMainImage")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FacilityId", "DisplayOrder");
+
+                    b.ToTable("FacilityImages", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FacilityReview", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("ApprovedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("FacilityId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ReviewText")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("ReviewerName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FacilityId", "IsApproved", "CreatedAt")
+                        .IsDescending(false, false, true);
+
+                    b.ToTable("FacilityReviews", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FacilityService", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FacilityId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Icon")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<bool>("IsAvailable")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FacilityId", "DisplayOrder");
+
+                    b.ToTable("FacilityServices", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Form", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("AllowMultipleSubmissions")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("AuthorId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("ErrorMessage")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("FormConfiguration")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsPublished")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("NotificationEmail")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime?>("PublishedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("RedirectUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<bool>("SendNotificationEmail")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("SendSubmitterEmail")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("SubmitterEmailField")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SuccessMessage")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -312,192 +796,17 @@ namespace Gahar_Backend.Migrations
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ViewCount")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(0);
-
                     b.HasKey("Id");
 
                     b.HasIndex("AuthorId");
 
-                    b.HasIndex("IsFeatured");
-
-                    b.HasIndex("LayoutId");
-
-                    b.HasIndex("PublishedAt");
-
-                    b.HasIndex("Status");
-
-                    b.HasIndex("ContentTypeId", "Slug")
-                        .IsUnique();
-
-                    b.ToTable("Contents", (string)null);
-                });
-
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.ContentFieldValue", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ContentId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ContentTypeFieldId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETUTCDATE()");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("FieldKey")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int?>("LanguageId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Value")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ContentTypeFieldId");
-
-                    b.HasIndex("LanguageId");
-
-                    b.HasIndex("ContentId", "ContentTypeFieldId", "LanguageId")
-                        .IsUnique()
-                        .HasFilter("[LanguageId] IS NOT NULL");
-
-                    b.ToTable("ContentFieldValues", (string)null);
-                });
-
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.ContentTag", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ContentId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETUTCDATE()");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("TagId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("TagId");
-
-                    b.HasIndex("ContentId", "TagId")
-                        .IsUnique();
-
-                    b.ToTable("ContentTags", (string)null);
-                });
-
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.ContentType", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETUTCDATE()");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<int>("DisplayOrder")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Icon")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasDefaultValue("FileText");
-
-                    b.Property<bool>("IsActive")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(true);
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsSinglePage")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
-
-                    b.Property<string>("MetaDescriptionTemplate")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("MetaTitleTemplate")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Slug")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
                     b.HasIndex("Slug")
                         .IsUnique();
 
-                    b.ToTable("ContentTypes", (string)null);
+                    b.ToTable("Forms", (string)null);
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.ContentTypeField", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FormField", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -505,28 +814,28 @@ namespace Gahar_Backend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ContentTypeId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETUTCDATE()");
+                        .HasColumnType("datetime2");
 
-                    b.Property<string>("DefaultValue")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("CssClass")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("CustomId")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
                     b.Property<int>("DisplayOrder")
                         .HasColumnType("int");
 
-                    b.Property<string>("FieldKey")
+                    b.Property<string>("FieldConfiguration")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FieldName")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
@@ -536,48 +845,183 @@ namespace Gahar_Backend.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("FormId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("HelpText")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsRequired")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsTranslatable")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(true);
+                    b.Property<bool>("IsVisible")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Label")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Options")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Placeholder")
+                    b.Property<string>("PlaceHolder")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
-
-                    b.Property<bool>("ShowInList")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(true);
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ValidationRules")
+                    b.HasKey("Id");
+
+                    b.HasIndex("FormId", "DisplayOrder");
+
+                    b.ToTable("FormFields", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FormSubmission", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("ArchivedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("FormId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsArchived")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Notes")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime?>("ReadAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("SubmissionData")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SubmitterEmail")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SubmitterIpAddress")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ContentTypeId", "FieldKey")
+                    b.HasIndex("IsRead");
+
+                    b.HasIndex("SubmitterEmail");
+
+                    b.HasIndex("FormId", "CreatedAt")
+                        .IsDescending(false, true);
+
+                    b.ToTable("FormSubmissions", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Keyword", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<double?>("AveragePosition")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("ClickThroughRate")
+                        .HasColumnType("float");
+
+                    b.Property<int>("Clicks")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("Difficulty")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Impressions")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsTargeted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastUpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("RankingPages")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SearchIntent")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SearchVolume")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TargetEntity")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int?>("TargetEntityId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Term")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Difficulty");
+
+                    b.HasIndex("SearchVolume")
+                        .IsDescending();
+
+                    b.HasIndex("Term")
                         .IsUnique();
 
-                    b.ToTable("ContentTypeFields", (string)null);
+                    b.HasIndex("TargetEntity", "TargetEntityId");
+
+                    b.ToTable("Keywords", (string)null);
                 });
 
             modelBuilder.Entity("Gahar_Backend.Models.Entities.Language", b =>
@@ -640,18 +1084,18 @@ namespace Gahar_Backend.Migrations
                         {
                             Id = 1,
                             Code = "ar",
-                            CreatedAt = new DateTime(2025, 11, 12, 22, 28, 2, 308, DateTimeKind.Utc).AddTicks(2805),
+                            CreatedAt = new DateTime(2025, 11, 13, 8, 3, 21, 440, DateTimeKind.Utc).AddTicks(2840),
                             Direction = "ltr",
                             IsActive = true,
                             IsDefault = true,
                             IsDeleted = false,
-                            Name = "العربية"
+                            Name = "???????"
                         },
                         new
                         {
                             Id = 2,
                             Code = "en",
-                            CreatedAt = new DateTime(2025, 11, 12, 22, 28, 2, 308, DateTimeKind.Utc).AddTicks(2882),
+                            CreatedAt = new DateTime(2025, 11, 13, 8, 3, 21, 440, DateTimeKind.Utc).AddTicks(2842),
                             Direction = "ltr",
                             IsActive = true,
                             IsDefault = false,
@@ -660,7 +1104,7 @@ namespace Gahar_Backend.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Layout", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Menu", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -668,9 +1112,8 @@ namespace Gahar_Backend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Configuration")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("AuthorId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -682,17 +1125,16 @@ namespace Gahar_Backend.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<bool>("IsActive")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(true);
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
 
-                    b.Property<bool>("IsDefault")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsPublished")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
@@ -700,26 +1142,28 @@ namespace Gahar_Backend.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("PreviewImage")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                    b.Property<DateTime?>("PublishedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IsActive");
+                    b.HasIndex("AuthorId");
 
-                    b.HasIndex("IsDefault");
-
-                    b.HasIndex("Name")
+                    b.HasIndex("Slug")
                         .IsUnique();
 
-                    b.ToTable("Layouts", (string)null);
+                    b.ToTable("Menus", (string)null);
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Media", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.MenuItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -727,9 +1171,76 @@ namespace Gahar_Backend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Alt")
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CssClass")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Icon")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsVisible")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Label")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("MenuId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("OpenInNewTab")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("ParentItemId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("RelatedPageId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Url")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParentItemId");
+
+                    b.HasIndex("MenuId", "DisplayOrder");
+
+                    b.ToTable("MenuItems", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Page", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("AuthorId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -737,76 +1248,206 @@ namespace Gahar_Backend.Migrations
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("FileExtension")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                    b.Property<string>("Description")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
-                    b.Property<string>("FileName")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("FilePath")
-                        .IsRequired()
+                    b.Property<bool>("IsPublished")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("MetaDescription")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<long>("FileSize")
+                    b.Property<string>("MetaKeywords")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MetaTitle")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("OgDescription")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("OgImage")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("OgTitle")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime?>("PublishedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("ShowBreadcrumbs")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("ShowTitle")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Template")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("Slug")
+                        .IsUnique();
+
+                    b.ToTable("Pages", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.PageAnalytics", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<double>("AverageTimeOnPage")
+                        .HasColumnType("float");
+
+                    b.Property<double>("BounceRate")
+                        .HasColumnType("float");
+
+                    b.Property<long>("ClickCount")
                         .HasColumnType("bigint");
 
-                    b.Property<int?>("Height")
+                    b.Property<int?>("ConversionCount")
+                        .HasColumnType("int");
+
+                    b.Property<double?>("ConversionRate")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("EntityId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EntityType")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastAnalyzedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PageName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("PageUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<long>("PageViews")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("TopDevice")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("TopReferrer")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<long>("UniqueVisitors")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LastAnalyzedAt")
+                        .IsDescending();
+
+                    b.HasIndex("PageUrl");
+
+                    b.HasIndex("EntityType", "EntityId");
+
+                    b.ToTable("PageAnalytics", (string)null);
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.PageBlock", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("BlockType")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Configuration")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CssClass")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("CustomId")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DisplayOrder")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("IsProcessed")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
+                    b.Property<bool>("IsVisible")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("MediaType")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("MimeType")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("ThumbnailPath")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                    b.Property<int>("PageId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("UploadedBy")
-                        .HasColumnType("int");
-
-                    b.Property<long?>("WebPFileSize")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("WebPPath")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<int?>("Width")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("CreatedAt");
+                    b.HasIndex("PageId", "DisplayOrder");
 
-                    b.HasIndex("FileName");
-
-                    b.HasIndex("MediaType");
-
-                    b.HasIndex("UploadedBy");
-
-                    b.ToTable("Media", (string)null);
+                    b.ToTable("PageBlocks", (string)null);
                 });
 
             modelBuilder.Entity("Gahar_Backend.Models.Entities.Permission", b =>
@@ -905,8 +1546,8 @@ namespace Gahar_Backend.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 11, 12, 22, 28, 2, 308, DateTimeKind.Utc).AddTicks(6042),
-                            DisplayName = "مدير النظام",
+                            CreatedAt = new DateTime(2025, 11, 13, 8, 3, 21, 440, DateTimeKind.Utc).AddTicks(2944),
+                            DisplayName = "???? ??????",
                             IsDeleted = false,
                             IsSystemRole = false,
                             Name = "SuperAdmin"
@@ -956,7 +1597,7 @@ namespace Gahar_Backend.Migrations
                     b.ToTable("RolePermissions", (string)null);
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Tag", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.SeoMetadata", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -964,51 +1605,80 @@ namespace Gahar_Backend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Color")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                    b.Property<string>("CanonicalUrl")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETUTCDATE()");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                    b.Property<int?>("EntityId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EntityType")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                    b.Property<bool>("IsFollowable")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("Slug")
+                    b.Property<bool>("IsIndexable")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastOptimizedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MetaDescription")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("MetaKeywords")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("OgDescription")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("OgImage")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("OgTitle")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("PageTitle")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Recommendations")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int?>("SeoScore")
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UsageCount")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(0);
-
                     b.HasKey("Id");
 
-                    b.HasIndex("Slug")
-                        .IsUnique();
+                    b.HasIndex("CreatedAt")
+                        .IsDescending();
 
-                    b.HasIndex("UsageCount");
+                    b.HasIndex("EntityType", "EntityId")
+                        .IsUnique()
+                        .HasFilter("[EntityType] IS NOT NULL AND [EntityId] IS NOT NULL");
 
-                    b.ToTable("Tags", (string)null);
+                    b.ToTable("SeoMetadata", (string)null);
                 });
 
             modelBuilder.Entity("Gahar_Backend.Models.Entities.Translation", b =>
@@ -1018,18 +1688,6 @@ namespace Gahar_Backend.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("AlbumId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ContentId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ContentTypeFieldId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ContentTypeId")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()
@@ -1058,10 +1716,7 @@ namespace Gahar_Backend.Migrations
                     b.Property<int>("LanguageId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("LayoutId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TagId")
+                    b.Property<int?>("PageId")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -1073,19 +1728,9 @@ namespace Gahar_Backend.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AlbumId");
-
-                    b.HasIndex("ContentId");
-
-                    b.HasIndex("ContentTypeFieldId");
-
-                    b.HasIndex("ContentTypeId");
-
                     b.HasIndex("LanguageId");
 
-                    b.HasIndex("LayoutId");
-
-                    b.HasIndex("TagId");
+                    b.HasIndex("PageId");
 
                     b.HasIndex("EntityType", "EntityId", "FieldName", "LanguageId")
                         .IsUnique();
@@ -1216,42 +1861,6 @@ namespace Gahar_Backend.Migrations
                     b.ToTable("UserRoles", (string)null);
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Album", b =>
-                {
-                    b.HasOne("Gahar_Backend.Models.Entities.Media", "CoverImage")
-                        .WithMany()
-                        .HasForeignKey("CoverImageId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.HasOne("Gahar_Backend.Models.Entities.User", "Creator")
-                        .WithMany()
-                        .HasForeignKey("CreatedBy")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.Navigation("CoverImage");
-
-                    b.Navigation("Creator");
-                });
-
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.AlbumMedia", b =>
-                {
-                    b.HasOne("Gahar_Backend.Models.Entities.Album", "Album")
-                        .WithMany("AlbumMedias")
-                        .HasForeignKey("AlbumId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Gahar_Backend.Models.Entities.Media", "Media")
-                        .WithMany()
-                        .HasForeignKey("MediaId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Album");
-
-                    b.Navigation("Media");
-                });
-
             modelBuilder.Entity("Gahar_Backend.Models.Entities.AuditLog", b =>
                 {
                     b.HasOne("Gahar_Backend.Models.Entities.User", "User")
@@ -1262,94 +1871,182 @@ namespace Gahar_Backend.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Content", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Certificate", b =>
                 {
                     b.HasOne("Gahar_Backend.Models.Entities.User", "Author")
                         .WithMany()
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.SetNull);
 
-                    b.HasOne("Gahar_Backend.Models.Entities.ContentType", "ContentType")
-                        .WithMany("Contents")
-                        .HasForeignKey("ContentTypeId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("Gahar_Backend.Models.Entities.Layout", "Layout")
-                        .WithMany("Contents")
-                        .HasForeignKey("LayoutId")
-                        .OnDelete(DeleteBehavior.Restrict);
-
                     b.Navigation("Author");
-
-                    b.Navigation("ContentType");
-
-                    b.Navigation("Layout");
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.ContentFieldValue", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.CertificateCategory", b =>
                 {
-                    b.HasOne("Gahar_Backend.Models.Entities.Content", "Content")
-                        .WithMany("FieldValues")
-                        .HasForeignKey("ContentId")
+                    b.HasOne("Gahar_Backend.Models.Entities.Certificate", "Certificate")
+                        .WithMany("Categories")
+                        .HasForeignKey("CertificateId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Gahar_Backend.Models.Entities.ContentTypeField", "ContentTypeField")
+                    b.Navigation("Certificate");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.CertificateHolder", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.Certificate", "Certificate")
+                        .WithMany("Holders")
+                        .HasForeignKey("CertificateId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Certificate");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.CertificateRequirement", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.Certificate", "Certificate")
+                        .WithMany("Requirements")
+                        .HasForeignKey("CertificateId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Certificate");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Facility", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.User", "Author")
                         .WithMany()
-                        .HasForeignKey("ContentTypeFieldId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Gahar_Backend.Models.Entities.Language", "Language")
-                        .WithMany()
-                        .HasForeignKey("LanguageId");
-
-                    b.Navigation("Content");
-
-                    b.Navigation("ContentTypeField");
-
-                    b.Navigation("Language");
-                });
-
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.ContentTag", b =>
-                {
-                    b.HasOne("Gahar_Backend.Models.Entities.Content", "Content")
-                        .WithMany("ContentTags")
-                        .HasForeignKey("ContentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Gahar_Backend.Models.Entities.Tag", "Tag")
-                        .WithMany("ContentTags")
-                        .HasForeignKey("TagId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Content");
-
-                    b.Navigation("Tag");
-                });
-
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.ContentTypeField", b =>
-                {
-                    b.HasOne("Gahar_Backend.Models.Entities.ContentType", "ContentType")
-                        .WithMany("Fields")
-                        .HasForeignKey("ContentTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ContentType");
-                });
-
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Media", b =>
-                {
-                    b.HasOne("Gahar_Backend.Models.Entities.User", "UploadedByUser")
-                        .WithMany()
-                        .HasForeignKey("UploadedBy")
+                        .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.SetNull);
 
-                    b.Navigation("UploadedByUser");
+                    b.Navigation("Author");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FacilityDepartment", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.Facility", "Facility")
+                        .WithMany("Departments")
+                        .HasForeignKey("FacilityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Facility");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FacilityImage", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.Facility", "Facility")
+                        .WithMany("Images")
+                        .HasForeignKey("FacilityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Facility");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FacilityReview", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.Facility", "Facility")
+                        .WithMany("Reviews")
+                        .HasForeignKey("FacilityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Facility");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FacilityService", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.Facility", "Facility")
+                        .WithMany("Services")
+                        .HasForeignKey("FacilityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Facility");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Form", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.User", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("Author");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FormField", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.Form", "Form")
+                        .WithMany("Fields")
+                        .HasForeignKey("FormId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Form");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.FormSubmission", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.Form", "Form")
+                        .WithMany("Submissions")
+                        .HasForeignKey("FormId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Form");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Menu", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.User", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("Author");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.MenuItem", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.Menu", "Menu")
+                        .WithMany("Items")
+                        .HasForeignKey("MenuId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Gahar_Backend.Models.Entities.MenuItem", "ParentItem")
+                        .WithMany("ChildItems")
+                        .HasForeignKey("ParentItemId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("Menu");
+
+                    b.Navigation("ParentItem");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Page", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.User", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("Author");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.PageBlock", b =>
+                {
+                    b.HasOne("Gahar_Backend.Models.Entities.Page", "Page")
+                        .WithMany("Blocks")
+                        .HasForeignKey("PageId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Page");
                 });
 
             modelBuilder.Entity("Gahar_Backend.Models.Entities.RolePermission", b =>
@@ -1373,35 +2070,15 @@ namespace Gahar_Backend.Migrations
 
             modelBuilder.Entity("Gahar_Backend.Models.Entities.Translation", b =>
                 {
-                    b.HasOne("Gahar_Backend.Models.Entities.Album", null)
-                        .WithMany("Translations")
-                        .HasForeignKey("AlbumId");
-
-                    b.HasOne("Gahar_Backend.Models.Entities.Content", null)
-                        .WithMany("Translations")
-                        .HasForeignKey("ContentId");
-
-                    b.HasOne("Gahar_Backend.Models.Entities.ContentTypeField", null)
-                        .WithMany("Translations")
-                        .HasForeignKey("ContentTypeFieldId");
-
-                    b.HasOne("Gahar_Backend.Models.Entities.ContentType", null)
-                        .WithMany("Translations")
-                        .HasForeignKey("ContentTypeId");
-
                     b.HasOne("Gahar_Backend.Models.Entities.Language", "Language")
                         .WithMany("Translations")
                         .HasForeignKey("LanguageId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Gahar_Backend.Models.Entities.Layout", null)
+                    b.HasOne("Gahar_Backend.Models.Entities.Page", null)
                         .WithMany("Translations")
-                        .HasForeignKey("LayoutId");
-
-                    b.HasOne("Gahar_Backend.Models.Entities.Tag", null)
-                        .WithMany("Translations")
-                        .HasForeignKey("TagId");
+                        .HasForeignKey("PageId");
 
                     b.Navigation("Language");
                 });
@@ -1425,34 +2102,31 @@ namespace Gahar_Backend.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Album", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Certificate", b =>
                 {
-                    b.Navigation("AlbumMedias");
+                    b.Navigation("Categories");
 
-                    b.Navigation("Translations");
+                    b.Navigation("Holders");
+
+                    b.Navigation("Requirements");
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Content", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Facility", b =>
                 {
-                    b.Navigation("ContentTags");
+                    b.Navigation("Departments");
 
-                    b.Navigation("FieldValues");
+                    b.Navigation("Images");
 
-                    b.Navigation("Translations");
+                    b.Navigation("Reviews");
+
+                    b.Navigation("Services");
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.ContentType", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Form", b =>
                 {
-                    b.Navigation("Contents");
-
                     b.Navigation("Fields");
 
-                    b.Navigation("Translations");
-                });
-
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.ContentTypeField", b =>
-                {
-                    b.Navigation("Translations");
+                    b.Navigation("Submissions");
                 });
 
             modelBuilder.Entity("Gahar_Backend.Models.Entities.Language", b =>
@@ -1460,9 +2134,19 @@ namespace Gahar_Backend.Migrations
                     b.Navigation("Translations");
                 });
 
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Layout", b =>
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Menu", b =>
                 {
-                    b.Navigation("Contents");
+                    b.Navigation("Items");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.MenuItem", b =>
+                {
+                    b.Navigation("ChildItems");
+                });
+
+            modelBuilder.Entity("Gahar_Backend.Models.Entities.Page", b =>
+                {
+                    b.Navigation("Blocks");
 
                     b.Navigation("Translations");
                 });
@@ -1477,13 +2161,6 @@ namespace Gahar_Backend.Migrations
                     b.Navigation("RolePermissions");
 
                     b.Navigation("UserRoles");
-                });
-
-            modelBuilder.Entity("Gahar_Backend.Models.Entities.Tag", b =>
-                {
-                    b.Navigation("ContentTags");
-
-                    b.Navigation("Translations");
                 });
 
             modelBuilder.Entity("Gahar_Backend.Models.Entities.User", b =>

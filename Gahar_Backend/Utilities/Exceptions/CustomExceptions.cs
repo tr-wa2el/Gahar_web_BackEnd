@@ -19,9 +19,4 @@ namespace Gahar_Backend.Utilities.Exceptions
     {
      public ForbiddenException(string message) : base(message) { }
     }
-
-    public class ValidationException : Exception
-    {
-        public ValidationException(string message) : base(message) { }
-    }
 }
