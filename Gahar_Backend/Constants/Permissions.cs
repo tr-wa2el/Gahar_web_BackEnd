@@ -1,0 +1,96 @@
+namespace Gahar_Backend.Constants
+{
+    public static class Permissions
+    {
+        // Content Types
+        public static class ContentTypes
+        {
+            public const string View = "ContentTypes.View";
+            public const string Create = "ContentTypes.Create";
+            public const string Edit = "ContentTypes.Edit";
+            public const string Delete = "ContentTypes.Delete";
+        }
+
+        // Content
+        public static class Content
+        {
+            public const string View = "Content.View";
+            public const string Create = "Content.Create";
+            public const string Edit = "Content.Edit";
+            public const string Delete = "Content.Delete";
+            public const string Publish = "Content.Publish";
+        }
+
+        // Layouts
+        public static class Layouts
+        {
+            public const string View = "Layouts.View";
+            public const string Create = "Layouts.Create";
+            public const string Edit = "Layouts.Edit";
+            public const string Delete = "Layouts.Delete";
+        }
+
+        // Tags
+        public static class Tags
+        {
+            public const string View = "Tags.View";
+            public const string Create = "Tags.Create";
+            public const string Edit = "Tags.Edit";
+            public const string Delete = "Tags.Delete";
+        }
+
+        // Pages
+        public static class Pages
+        {
+            public const string View = "Pages.View";
+            public const string Create = "Pages.Create";
+            public const string Edit = "Pages.Edit";
+            public const string Delete = "Pages.Delete";
+        }
+
+        // Forms
+        public static class Forms
+        {
+            public const string View = "Forms.View";
+            public const string Create = "Forms.Create";
+            public const string Edit = "Forms.Edit";
+            public const string Delete = "Forms.Delete";
+        }
+
+        // Users
+        public static class Users
+        {
+            public const string View = "Users.View";
+            public const string Create = "Users.Create";
+            public const string Edit = "Users.Edit";
+            public const string Delete = "Users.Delete";
+        }
+
+        // Legacy constants for backward compatibility
+        public const string ContentTypesView = "ContentTypes.View";
+        public const string ContentTypesCreate = "ContentTypes.Create";
+        public const string ContentTypesEdit = "ContentTypes.Edit";
+        public const string ContentTypesDelete = "ContentTypes.Delete";
+
+        public const string ContentView = "Content.View";
+        public const string ContentCreate = "Content.Create";
+        public const string ContentEdit = "Content.Edit";
+        public const string ContentDelete = "Content.Delete";
+        public const string ContentPublish = "Content.Publish";
+
+        public const string PagesView = "Pages.View";
+        public const string PagesCreate = "Pages.Create";
+        public const string PagesEdit = "Pages.Edit";
+        public const string PagesDelete = "Pages.Delete";
+
+        public const string FormsView = "Forms.View";
+        public const string FormsCreate = "Forms.Create";
+        public const string FormsEdit = "Forms.Edit";
+        public const string FormsDelete = "Forms.Delete";
+
+        public const string UsersView = "Users.View";
+        public const string UsersCreate = "Users.Create";
+        public const string UsersEdit = "Users.Edit";
+        public const string UsersDelete = "Users.Delete";
+    }
+}
