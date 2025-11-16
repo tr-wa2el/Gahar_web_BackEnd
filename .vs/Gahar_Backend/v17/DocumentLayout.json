@@ -97,6 +97,62 @@
     {
       "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_implementation_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
       "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_implementation_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\attributes\\ratelimitattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\attributes\\ratelimitattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_non_admin_implementation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_non_admin_implementation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_non_admin_testing.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_non_admin_testing.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_non_admin_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_non_admin_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_quick_reference.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_quick_reference.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_implementation_checklist.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_implementation_checklist.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_deployment_ready.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_deployment_ready.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_documentation_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_documentation_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\global_rate_limiting_project_wide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\global_rate_limiting_project_wide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\middleware\\ratelimitingmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\middleware\\ratelimitingmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\project_wide_rate_limiting_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\project_wide_rate_limiting_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\readme_global_rate_limiting.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\readme_global_rate_limiting.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\global_rate_limiting_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\global_rate_limiting_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\global_rate_limiting_documentation_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\global_rate_limiting_documentation_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,19 +162,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "RateLimitService.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
-              "RelativeToolTip": "Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 33,
+              "Title": "RateLimitingMiddlewareExtensions.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Middleware\\RateLimitingMiddlewareExtensions.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Middleware\\RateLimitingMiddlewareExtensions.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Middleware\\RateLimitingMiddlewareExtensions.cs",
+              "RelativeToolTip": "Gahar_Backend\\Middleware\\RateLimitingMiddlewareExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:58:26.325Z",
+              "WhenOpened": "2025-11-16T11:34:28.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "GLOBAL_RATE_LIMITING_PROJECT_WIDE.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_PROJECT_WIDE.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_PROJECT_WIDE.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_PROJECT_WIDE.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_PROJECT_WIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:34:13.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "Gahar_Backend\\appsettings.json",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\appsettings.json",
+              "RelativeToolTip": "Gahar_Backend\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-16T10:25:16.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GLOBAL_RATE_LIMITING_DOCUMENTATION_INDEX.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_DOCUMENTATION_INDEX.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_DOCUMENTATION_INDEX.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_DOCUMENTATION_INDEX.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_DOCUMENTATION_INDEX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:36:59.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "GLOBAL_RATE_LIMITING_VISUAL_GUIDE.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_VISUAL_GUIDE.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_VISUAL_GUIDE.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_VISUAL_GUIDE.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_VISUAL_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:36:31.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "README_GLOBAL_RATE_LIMITING.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\README_GLOBAL_RATE_LIMITING.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\README_GLOBAL_RATE_LIMITING.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\README_GLOBAL_RATE_LIMITING.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\README_GLOBAL_RATE_LIMITING.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:35:58.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PROJECT_WIDE_RATE_LIMITING_COMPLETE.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\PROJECT_WIDE_RATE_LIMITING_COMPLETE.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\PROJECT_WIDE_RATE_LIMITING_COMPLETE.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\PROJECT_WIDE_RATE_LIMITING_COMPLETE.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\PROJECT_WIDE_RATE_LIMITING_COMPLETE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:35:32.996Z",
               "EditorCaption": ""
             },
             {
@@ -155,22 +289,126 @@
               "RelativeDocumentMoniker": "Gahar_Backend\\Middleware\\RateLimitingMiddleware.cs",
               "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Middleware\\RateLimitingMiddleware.cs",
               "RelativeToolTip": "Gahar_Backend\\Middleware\\RateLimitingMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAPMAAAAAAAAAAABRwPYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-16T10:55:14.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\appsettings.json",
-              "RelativeDocumentMoniker": "Gahar_Backend\\appsettings.json",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\appsettings.json",
-              "RelativeToolTip": "Gahar_Backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-16T10:25:16.821Z",
+              "DocumentIndex": 24,
+              "Title": "RateLimitAttribute.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Attributes\\RateLimitAttribute.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Attributes\\RateLimitAttribute.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Attributes\\RateLimitAttribute.cs",
+              "RelativeToolTip": "Gahar_Backend\\Attributes\\RateLimitAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T11:21:44.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "RATE_LIMITING_DOCUMENTATION_INDEX.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_DOCUMENTATION_INDEX.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_DOCUMENTATION_INDEX.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_DOCUMENTATION_INDEX.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_DOCUMENTATION_INDEX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:25:17.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RATE_LIMITING_DEPLOYMENT_READY.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_DEPLOYMENT_READY.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_DEPLOYMENT_READY.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_DEPLOYMENT_READY.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_DEPLOYMENT_READY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:24:52.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RATE_LIMITING_IMPLEMENTATION_CHECKLIST.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_CHECKLIST.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_CHECKLIST.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_CHECKLIST.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_CHECKLIST.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:24:22.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RATE_LIMITING_QUICK_REFERENCE.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_QUICK_REFERENCE.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_QUICK_REFERENCE.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_QUICK_REFERENCE.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_QUICK_REFERENCE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:23:55.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RATE_LIMITING_NON_ADMIN_SUMMARY.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_SUMMARY.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_SUMMARY.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_SUMMARY.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:23:38.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RATE_LIMITING_NON_ADMIN_TESTING.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_TESTING.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_TESTING.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_TESTING.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_TESTING.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEECAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:23:12.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RATE_LIMITING_NON_ADMIN_IMPLEMENTATION.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_IMPLEMENTATION.md",
+              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_IMPLEMENTATION.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_IMPLEMENTATION.md",
+              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_IMPLEMENTATION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-16T11:22:43.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RateLimitService.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
+              "RelativeToolTip": "Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T10:58:26.325Z",
               "EditorCaption": ""
             },
             {
@@ -311,7 +549,7 @@
               "RelativeDocumentMoniker": "Gahar_Backend\\Program.cs",
               "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Program.cs",
               "RelativeToolTip": "Gahar_Backend\\Program.cs",
-              "ViewState": "AgIAANoAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANYAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-16T10:39:41.203Z",
               "EditorCaption": ""
@@ -324,7 +562,7 @@
               "RelativeDocumentMoniker": "Gahar_Backend\\Controllers\\ShortLinksController.cs",
               "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Controllers\\ShortLinksController.cs",
               "RelativeToolTip": "Gahar_Backend\\Controllers\\ShortLinksController.cs",
-              "ViewState": "AgIAAA4BAAAAAAAAAABBwA8BAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIBAAAAAAAAAEBVwBYBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-16T10:39:25.776Z",
               "EditorCaption": ""
