@@ -101,7 +101,8 @@ namespace Gahar_Backend.Services.Implementations
      if (isAdmin)
     {
    return await _dbContext.Departments
-      .Select(d => d.Id)
+      .Where(d => !d.IsDeleted)
+      .Select(d => new Guid(d.Id.ToString()))
        .ToListAsync();
  }
 
@@ -110,15 +111,15 @@ namespace Gahar_Backend.Services.Implementations
     .FirstOrDefaultAsync(u => u.Id == userId);
 
      if (user == null)
-          return new List<Guid>();
+      return new List<Guid>();
 
       // المستخدم يشوف قسمه فقط
      return user.DepartmentId.HasValue
      ? new List<Guid> { user.DepartmentId.Value }
   : new List<Guid>();
-        }
+    }
     catch (Exception ex)
-       {
+    {
  _logger.LogError(ex, "خطأ في الحصول على الأقسام المتاحة للمستخدم {UserId}", userId);
   return new List<Guid>();
  }

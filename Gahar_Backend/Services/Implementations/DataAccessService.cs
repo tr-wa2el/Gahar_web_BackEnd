@@ -87,17 +87,18 @@ public class DataAccessService : IDataAccessService
         private Expression<Func<T, bool>> BuildAccessFilter<T>(int userId, Guid? userDepartmentId)
   where T : class
     {
-  var entityType = typeof(T);
+var entityType = typeof(T);
 
       // إذا كان الكيان لديه حقل DepartmentId، استخدم القسم
      if (entityType == typeof(Form))
  {
-    Expression<Func<T, bool>> filter = x => ((Form)(object)x).DepartmentId == userDepartmentId;
-   return filter;
+    Expression<Func<Form, bool>> formFilter = x => x.DepartmentId == userDepartmentId;
+   return (Expression<Func<T, bool>>)(object)formFilter;
  }
 
     // بشكل افتراضي، لا يرى شيء
-return x => false;
+Expression<Func<T, bool>> defaultFilter = x => false;
+return defaultFilter;
         }
 
         /// <summary>

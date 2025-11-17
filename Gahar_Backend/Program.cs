@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Gahar_Backend.Data;
+using Gahar_Backend.Services;
 using Gahar_Backend.Services.Interfaces;
 using Gahar_Backend.Services.Implementations;
 using Gahar_Backend.Repositories.Interfaces;
@@ -47,13 +48,12 @@ ValidAudience = jwtSettings["Audience"],
 // CORS
 builder.Services.AddCors(options =>
 {
- options.AddPolicy("AllowFrontend", policy =>
+    options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "https://gahar.sa")
+        policy.AllowAnyOrigin()
               .AllowAnyHeader()
-    .AllowAnyMethod()
-     .AllowCredentials();
-  });
+    .AllowAnyMethod();
+    });
 });
 
 // Redis Configuration (Optional - comment out if not using Redis)
@@ -220,7 +220,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors("AllowFrontend");
+app.UseCors("AllowAll");
 
 app.UseRateLimiting(); // Rate Limiting Middleware - يجب أن يكون قبل الـ Authentication
 
