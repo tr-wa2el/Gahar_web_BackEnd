@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔐 Gahar Backend - Test Users Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+ box-sizing: border-box;
+        }
+
+      body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+  }
+
+        .container {
+        background: white;
+            border-radius: 10px;
+   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+          max-width: 600px;
+     width: 100%;
+     padding: 40px;
+        }
+
+        .header {
+  text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+      color: #333;
+       margin-bottom: 10px;
+        }
+
+  .header p {
+ color: #666;
+  font-size: 14px;
+        }
+
+  .user-selector {
+         margin-bottom: 30px;
+      }
+
+        .user-selector label {
+display: block;
+        margin-bottom: 10px;
+            color: #333;
+  font-weight: 600;
+        }
+
+    .user-selector select {
+       width: 100%;
+ padding: 12px;
+       border: 2px solid #ddd;
+     border-radius: 5px;
+   font-size: 14px;
+  cursor: pointer;
+   transition: border-color 0.3s;
+  }
+
+        .user-selector select:focus {
+      outline: none;
+  border-color: #667eea;
+        }
+
+ .user-info {
+   background: #f5f5f5;
+   padding: 20px;
+            border-radius: 5px;
+  margin-bottom: 20px;
+            display: none;
+        }
+
+     .user-info.active {
+display: block;
+    }
+
+        .info-row {
+     display: flex;
+     justify-content: space-between;
+      margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+     .info-row label {
+            font-weight: 600;
+  color: #333;
+   }
+
+        .info-row value {
+            color: #666;
+        }
+
+        .action-buttons {
+            display: flex;
+        gap: 10px;
+     margin-bottom: 20px;
+        }
+
+        .btn {
+   flex: 1;
+    padding: 12px;
+    border: none;
+            border-radius: 5px;
+            font-size: 14px;
+          font-weight: 600;
+ cursor: pointer;
+  transition: all 0.3s;
+     }
+
+     .btn-login {
+    background: #667eea;
+        color: white;
+   }
+
+        .btn-login:hover {
+          background: #5568d3;
+         transform: translateY(-2px);
+ box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-copy {
+            background: #48bb78;
+      color: white;
+          display: none;
+        }
+
+        .btn-copy:hover {
+        background: #38a169;
+  }
+
+    .btn-copy.active {
+            display: flex;
+     align-items: center;
+     justify-content: center;
+        }
+
+        .result-section {
+            margin-top: 20px;
+            padding: 20px;
+       border-radius: 5px;
+         display: none;
+  }
+
+.result-section.active {
+          display: block;
+        }
+
+        .result-success {
+ background: #c6f6d5;
+            border: 2px solid #9ae6b4;
+     color: #22543d;
+        }
+
+  .result-error {
+            background: #fed7d7;
+          border: 2px solid #fc8181;
+   color: #742a2a;
+        }
+
+        .result-title {
+  font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .token-display {
+            background: #edf2f7;
+         padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+         word-break: break-all;
+   font-family: 'Courier New', monospace;
+            font-size: 12px;
+ color: #2d3748;
+        }
+
+    .swagger-info {
+     margin-top: 15px;
+     padding: 15px;
+ background: #bee3f8;
+    border-radius: 5px;
+            border-left: 4px solid #4299e1;
+        }
+
+        .swagger-info a {
+            color: #2c5282;
+            text-decoration: none;
+   font-weight: 600;
+        }
+
+  .swagger-info a:hover {
+text-decoration: underline;
+      }
+
+      .loading {
+   display: none;
+  text-align: center;
+         color: #667eea;
+            font-weight: 600;
+        }
+
+   .spinner {
+       border: 3px solid #f3f3f3;
+ border-top: 3px solid #667eea;
+  border-radius: 50%;
+        width: 30px;
+   height: 30px;
+            animation: spin 1s linear infinite;
+       margin: 10px auto;
+     }
+
+        @keyframes spin {
+   0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+      }
+
+      .footer {
+         margin-top: 30px;
+        padding-top: 20px;
+       border-top: 1px solid #ddd;
+ text-align: center;
+   color: #999;
+            font-size: 12px;
+        }
+
+      .badge {
+ display: inline-block;
+     padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+        font-weight: 600;
+   margin: 2px;
+        }
+
+        .badge-admin {
+    background: #bee3f8;
+            color: #2c5282;
+        }
+
+        .badge-swagger {
+            background: #c6f6d5;
+          color: #22543d;
+        }
+
+        .badge-no-swagger {
+            background: #fed7d7;
+color: #742a2a;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+   padding: 20px;
+            }
+
+    .action-buttons {
+     flex-direction: column;
+            }
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+  <div class="header">
+        <h1>🔐 Gahar Backend Test Login</h1>
+        <p>اختر مستخدم واختبر الدخول - Select a user and test login</p>
+        </div>
+
+        <div class="user-selector">
+            <label for="userSelect">اختر المستخدم / Select User:</label>
+            <select id="userSelect" onchange="updateUserInfo()">
+         <option value="">اختر مستخدم...</option>
+   <option value="superadmin">🔐 Super Admin (admin@gahar.sa)</option>
+         <option value="admin">👨‍💼 Admin (admin@example.com)</option>
+       <option value="editor">✏️ Editor (editor@example.com)</option>
+       <option value="viewer">👁️ Viewer (viewer@example.com)</option>
+    <option value="user">👤 User (user@example.com)</option>
+            </select>
+        </div>
+
+        <div id="userInfo" class="user-info">
+ <div class="info-row">
+                <label>الدور / Role:</label>
+         <value id="infoRole">-</value>
+            </div>
+        <div class="info-row">
+      <label>البريد الإلكتروني / Email:</label>
+  <value id="infoEmail">-</value>
+  </div>
+            <div class="info-row">
+     <label>كلمة المرور / Password:</label>
+  <value id="infoPassword">-</value>
+        </div>
+<div class="info-row">
+    <label>الصلاحيات / Permissions:</label>
+         <value id="infoPermissions">-</value>
+      </div>
+         <div style="margin-top: 10px;">
+  <div id="badgesContainer"></div>
+  </div>
+    </div>
+
+        <div class="action-buttons">
+            <button class="btn btn-login" onclick="login()">🚀 دخول / Login</button>
+       <button class="btn btn-copy" id="copyBtn" onclick="copyToken()">📋 انسخ Token</button>
+        </div>
+
+        <div class="loading" id="loading">
+  <div class="spinner"></div>
+            جاري الدخول...
+        </div>
+
+<div id="resultSection" class="result-section">
+      <div class="result-title" id="resultTitle"></div>
+     <div id="resultMessage"></div>
+        </div>
+
+        <div class="footer">
+            <p>🧪 أداة اختبار / Test Tool - للتطوير والاختبار فقط / For development only</p>
+          <p>📚 Documentation: TEST_USERS.md | SWAGGER_QUICK_START.md</p>
+  </div>
+    </div>
+
+    <script>
+        const testUsers = {
+            superadmin: {
+ name: "Super Admin",
+ email: "admin@gahar.sa",
+       password: "Admin@123",
+      role: "SuperAdmin",
+   permissions: "جميع الصلاحيات / All Permissions",
+ swaggerAccess: true
+            },
+            admin: {
+    name: "Admin",
+                email: "admin@example.com",
+            password: "Admin@123",
+              role: "Admin",
+     permissions: "جميع الصلاحيات ما عدا التدقيق / All except Audit",
+      swaggerAccess: true
+    },
+       editor: {
+      name: "Editor",
+        email: "editor@example.com",
+           password: "Editor@123",
+      role: "Editor",
+  permissions: "View, Create, Edit / عرض، إنشاء، تعديل",
+     swaggerAccess: false
+            },
+          viewer: {
+   name: "Viewer",
+       email: "viewer@example.com",
+        password: "Viewer@123",
+                role: "Viewer",
+     permissions: "View Only / عرض فقط",
+       swaggerAccess: false
+        },
+            user: {
+      name: "User",
+        email: "user@example.com",
+   password: "User@123",
+         role: "Viewer",
+    permissions: "View Only / عرض فقط",
+ swaggerAccess: false
+     }
+        };
+
+        let currentToken = null;
+        let currentUser = null;
+
+        function updateUserInfo() {
+     const select = document.getElementById('userSelect');
+            const userKey = select.value;
+
+            if (!userKey) {
+    document.getElementById('userInfo').classList.remove('active');
+return;
+            }
+
+        currentUser = testUsers[userKey];
+      const userInfo = document.getElementById('userInfo');
+
+    document.getElementById('infoRole').textContent = currentUser.role;
+            document.getElementById('infoEmail').textContent = currentUser.email;
+      document.getElementById('infoPassword').textContent = currentUser.password;
+   document.getElementById('infoPermissions').textContent = currentUser.permissions;
+
+    // Update badges
+         let badgesHtml = '';
+   if (currentUser.swaggerAccess) {
+              badgesHtml += '<span class="badge badge-swagger">✅ Swagger Access</span>';
+            } else {
+      badgesHtml += '<span class="badge badge-no-swagger">❌ No Swagger Access</span>';
+            }
+            document.getElementById('badgesContainer').innerHTML = badgesHtml;
+
+       userInfo.classList.add('active');
+   document.getElementById('resultSection').classList.remove('active');
+  document.getElementById('copyBtn').classList.remove('active');
+        }
+
+        async function login() {
+            if (!currentUser) {
+              alert('Please select a user');
+             return;
+            }
+
+      const loading = document.getElementById('loading');
+            const resultSection = document.getElementById('resultSection');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultMessage = document.getElementById('resultMessage');
+
+  loading.style.display = 'block';
+            resultSection.classList.remove('active', 'result-success', 'result-error');
+
+        try {
+  const response = await fetch('http://localhost:5000/api/auth/login', {
+     method: 'POST',
+             headers: {
+       'Content-Type': 'application/json'
+ },
+        body: JSON.stringify({
+     email: currentUser.email,
+    password: currentUser.password
+          })
+ });
+
+              const data = await response.json();
+
+   loading.style.display = 'none';
+
+           if (response.ok && data.accessToken) {
+        currentToken = data.accessToken;
+ resultTitle.textContent = '✅ تم الدخول بنجاح / Login Successful!';
+         resultSection.classList.add('result-success');
+
+       let html = '<div class="token-display">Bearer ' + currentToken + '</div>';
+
+   if (currentUser.swaggerAccess) {
+             html += `<div class="swagger-info">
+  <strong>✅ Swagger Access Enabled</strong><br>
+      <a href="http://localhost:5000/swagger/index.html" target="_blank">
+     🌐 Open Swagger →
+        </a><br>
+              <small style="color: #2c5282; display: block; margin-top: 10px;">
+             1. Click "Authorize" button<br>
+            2. Paste the token above<br>
+      3. Click "Authorize"
+   </small>
+     </div>`;
+    } else {
+         html += `<div class="swagger-info" style="background: #fed7d7; border-left-color: #fc8181;">
+      <strong>❌ Swagger Access Denied</strong><br>
+        <small>This user role doesn't have Swagger access. Use an Admin account.</small>
+    </div>`;
+                    }
+
+         resultMessage.innerHTML = html;
+           document.getElementById('copyBtn').classList.add('active');
+            } else {
+          resultTitle.textContent = '❌ فشل الدخول / Login Failed!';
+            resultSection.classList.add('result-error');
+ resultMessage.innerHTML = `<p>${data.message || 'Unable to login'}</p>`;
+      }
+
+   resultSection.classList.add('active');
+         } catch (error) {
+    loading.style.display = 'none';
+         resultTitle.textContent = '❌ خطأ / Error!';
+        resultSection.classList.add('result-error');
+           resultMessage.innerHTML = `<p>${error.message}</p>`;
+    resultSection.classList.add('active');
+            }
+        }
+
+        function copyToken() {
+            if (currentToken) {
+     navigator.clipboard.writeText('Bearer ' + currentToken).then(() => {
+   alert('✅ Token copied to clipboard!');
+        }).catch(err => {
+ alert('Failed to copy token');
+                });
+  }
+    }
+
+      // Allow Enter to trigger login
+    document.addEventListener('keypress', function(event) {
+   if (event.key === 'Enter') {
+      login();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -12,7 +12,8 @@ namespace Gahar_Backend.Utilities
      await SeedRolesAsync(context);
      await SeedPermissionsAsync(context);
     await SeedSuperAdminAsync(context);
-  }
+            await SeedTestUsersAsync(context); // Add test users
+        }
 
         private static async Task SeedLanguagesAsync(ApplicationDbContext context)
         {
@@ -181,5 +182,104 @@ var rolePermissions = allPermissions.Select(p => new RolePermission
 await context.RolePermissions.AddRangeAsync(rolePermissions);
        await context.SaveChangesAsync();
       }
+
+        /// <summary>
+   /// Creates test users with different roles for testing purposes
+        /// </summary>
+        private static async Task SeedTestUsersAsync(ApplicationDbContext context)
+      {
+          // Test users configuration
+            var testUsers = new List<(string Email, string Username, string Password, string FirstName, string LastName, string RoleName)>
+ {
+           ("admin@example.com", "admin", "Admin@123", "محمد", "علي", "Admin"),
+ ("editor@example.com", "editor", "Editor@123", "فاطمة", "محمد", "Editor"),
+   ("viewer@example.com", "viewer", "Viewer@123", "أحمد", "حسن", "Viewer"),
+          ("user@example.com", "user", "User@123", "سارة", "علي", "Viewer"),
+            };
+
+   foreach (var (email, username, password, firstName, lastName, roleName) in testUsers)
+{
+           // Check if user already exists
+           if (await context.Users.AnyAsync(u => u.Email == email))
+        continue;
+
+   var role = await context.Roles.FirstOrDefaultAsync(r => r.Name == roleName);
+                if (role == null)
+    continue;
+
+                var user = new User
+     {
+       Username = username,
+        Email = email,
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(password),
+       FirstName = firstName,
+     LastName = lastName,
+   IsActive = true,
+           EmailConfirmed = true
+          };
+
+            await context.Users.AddAsync(user);
+      await context.SaveChangesAsync();
+
+          // Assign role to user
+         var userRole = new UserRole
+  {
+      UserId = user.Id,
+    RoleId = role.Id
+        };
+
+        await context.UserRoles.AddAsync(userRole);
+     await context.SaveChangesAsync();
+
+                // Assign permissions based on role
+       if (roleName == "Admin")
+       {
+        // Admin gets most permissions
+    var adminPermissions = await context.Permissions
+           .Where(p => p.Module != "AuditLogs") // Exclude audit logs
+         .ToListAsync();
+
+   var rolePerms = adminPermissions.Select(p => new RolePermission
+           {
+            RoleId = role.Id,
+            PermissionId = p.Id
+               }).ToList();
+
+       await context.RolePermissions.AddRangeAsync(rolePerms);
+       }
+  else if (roleName == "Editor")
+          {
+   // Editor gets Create, Edit, View permissions (not Delete)
+        var editorPermissions = await context.Permissions
+            .Where(p => p.Name.Contains("View") || p.Name.Contains("Create") || p.Name.Contains("Edit"))
+       .ToListAsync();
+
+     var rolePerms = editorPermissions.Select(p => new RolePermission
+               {
+    RoleId = role.Id,
+      PermissionId = p.Id
+        }).ToList();
+
+       await context.RolePermissions.AddRangeAsync(rolePerms);
+         }
+ else if (roleName == "Viewer")
+                {
+           // Viewer gets only View permissions
+         var viewerPermissions = await context.Permissions
+ .Where(p => p.Name.Contains("View"))
+                  .ToListAsync();
+
+      var rolePerms = viewerPermissions.Select(p => new RolePermission
+        {
+         RoleId = role.Id,
+  PermissionId = p.Id
+           }).ToList();
+
+        await context.RolePermissions.AddRangeAsync(rolePerms);
+      }
+
+        await context.SaveChangesAsync();
+            }
+  }
     }
 }

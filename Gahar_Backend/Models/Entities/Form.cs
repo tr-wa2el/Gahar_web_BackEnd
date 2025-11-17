@@ -52,6 +52,13 @@ public class Form : BaseEntity
 public int? AuthorId { get; set; }
     public User? Author { get; set; }
 
+    /// <summary>
+    /// القسم التابع له النموذج
+    /// يحدد من يمكنه رؤية وتعديل النموذج
+    /// </summary>
+    public Guid? DepartmentId { get; set; }
+    public Department? Department { get; set; }
+
     // Navigation Properties
     public ICollection<FormField> Fields { get; set; } = new List<FormField>();
     public ICollection<FormSubmission> Submissions { get; set; } = new List<FormSubmission>();

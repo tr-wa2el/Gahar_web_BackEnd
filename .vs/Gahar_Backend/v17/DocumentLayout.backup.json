@@ -3,156 +3,208 @@
   "WorkspaceRootPath": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\middleware\\swaggerauthenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\middleware\\swaggerauthenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\middleware\\swaggerauthenticationmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\middleware\\swaggerauthenticationmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\SWAGGER_ADMIN_ACCESS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SWAGGER_ADMIN_ACCESS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\SWAGGER_QUICK_START.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SWAGGER_QUICK_START.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\SWAGGER_API_EXAMPLES.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SWAGGER_API_EXAMPLES.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\IMPLEMENTATION_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IMPLEMENTATION_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\CODE_CHANGES_REFERENCE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CODE_CHANGES_REFERENCE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\DOCUMENTATION_INDEX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DOCUMENTATION_INDEX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\VISUAL_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VISUAL_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\COMPLETION_CHECKLIST.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:COMPLETION_CHECKLIST.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FINAL_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FINAL_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\START_HERE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:START_HERE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\utilities\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\utilities\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TEST_USERS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\login-test.sh||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login-test.sh||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\login-test.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login-test.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\test-users-config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test-users-config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\test-users-login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test-users-login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS_QUICK_REFERENCE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TEST_USERS_QUICK_REFERENCE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS_ADVANCED.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TEST_USERS_ADVANCED.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS_IMPLEMENTATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TEST_USERS_IMPLEMENTATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FINAL_IMPLEMENTATION_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FINAL_IMPLEMENTATION_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\README_TEST_USERS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README_TEST_USERS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\COMPLETE_TEST_USERS_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:COMPLETE_TEST_USERS_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FILES_INDEX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FILES_INDEX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FINAL_README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FINAL_README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\models\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\models\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\models\\entities\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\models\\entities\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\departmentaccessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\departmentaccessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\models\\entities\\shortlink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\models\\entities\\shortlink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\models\\entities\\shortlinkanalytics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\models\\entities\\shortlinkanalytics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\controllers\\formscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\controllers\\formscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\data\\configurations\\shortlinkconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\data\\configurations\\shortlinkconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\DEPARTMENT_ACCESS_CONTROL.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DEPARTMENT_ACCESS_CONTROL.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\data\\configurations\\shortlinkanalyticsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\data\\configurations\\shortlinkanalyticsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\DEPARTMENT_SYSTEM_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DEPARTMENT_SYSTEM_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\models\\dtos\\shortlinks\\shortlinkdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\models\\dtos\\shortlinks\\shortlinkdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\QUICK_START_DEPARTMENTS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QUICK_START_DEPARTMENTS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\repositories\\interfaces\\ishortlinkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\repositories\\interfaces\\ishortlinkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\API_ENDPOINTS_REFERENCE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:API_ENDPOINTS_REFERENCE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\repositories\\implementations\\shortlinkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\repositories\\implementations\\shortlinkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\COMPLETION_REPORT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:COMPLETION_REPORT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\interfaces\\iqrcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\interfaces\\iqrcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\START_WITH_DEPARTMENTS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:START_WITH_DEPARTMENTS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\interfaces\\ishortlinkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\interfaces\\ishortlinkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\QUICK_REFERENCE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QUICK_REFERENCE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\controllers\\shortlinkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\controllers\\shortlinkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\implementations\\permissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\implementations\\permissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\implementations\\dataaccessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\implementations\\dataaccessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\mappings\\shortlinkmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\mappings\\shortlinkmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\implementations\\departmentpermissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\implementations\\departmentpermissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\implementations\\shortlinkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\implementations\\shortlinkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\implementations\\rolebasedaccessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\implementations\\rolebasedaccessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\implementations\\qrcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\implementations\\qrcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\ADVANCED_PERMISSIONS_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ADVANCED_PERMISSIONS_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\feature_10_short_links_qr_code.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\feature_10_short_links_qr_code.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\QUICK_START_ADVANCED_PERMISSIONS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QUICK_START_ADVANCED_PERMISSIONS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\middleware\\ratelimitingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\middleware\\ratelimitingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\interfaces\\ipermissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\interfaces\\ipermissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\interfaces\\iratelimitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\interfaces\\iratelimitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\filters\\accesscontrolfilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\filters\\accesscontrolfilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\controllers\\ratelimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\controllers\\ratelimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_feature.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_feature.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\services\\implementations\\ratelimitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\services\\implementations\\ratelimitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_testing_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_testing_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_implementation_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_implementation_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\attributes\\ratelimitattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\attributes\\ratelimitattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_non_admin_implementation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_non_admin_implementation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_non_admin_testing.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_non_admin_testing.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_non_admin_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_non_admin_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_quick_reference.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_quick_reference.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_implementation_checklist.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_implementation_checklist.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_deployment_ready.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_deployment_ready.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\rate_limiting_documentation_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\rate_limiting_documentation_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\global_rate_limiting_project_wide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\global_rate_limiting_project_wide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\middleware\\ratelimitingmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\middleware\\ratelimitingmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\project_wide_rate_limiting_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\project_wide_rate_limiting_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\readme_global_rate_limiting.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\readme_global_rate_limiting.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\global_rate_limiting_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\global_rate_limiting_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\docs\\global_rate_limiting_documentation_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\docs\\global_rate_limiting_documentation_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+      "AbsoluteMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|f:\\web gahar\\bk\\gahar_web_backend\\gahar_backend\\controllers\\permissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2349E217-FDA5-4C65-8FD5-6B07BF620C84}|Gahar_Backend\\Gahar_Backend.csproj|solutionrelative:gahar_backend\\controllers\\permissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -162,500 +214,669 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "RateLimitingMiddlewareExtensions.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Middleware\\RateLimitingMiddlewareExtensions.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Middleware\\RateLimitingMiddlewareExtensions.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Middleware\\RateLimitingMiddlewareExtensions.cs",
-              "RelativeToolTip": "Gahar_Backend\\Middleware\\RateLimitingMiddlewareExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 48,
+              "Title": "IPermissionService.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Interfaces\\IPermissionService.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Interfaces\\IPermissionService.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Interfaces\\IPermissionService.cs",
+              "RelativeToolTip": "Gahar_Backend\\Services\\Interfaces\\IPermissionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T11:34:28.768Z",
+              "WhenOpened": "2025-11-17T09:08:32.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "GLOBAL_RATE_LIMITING_PROJECT_WIDE.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_PROJECT_WIDE.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_PROJECT_WIDE.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_PROJECT_WIDE.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_PROJECT_WIDE.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPgBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:34:13.511Z",
+              "DocumentIndex": 45,
+              "Title": "RoleBasedAccessService.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\RoleBasedAccessService.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Implementations\\RoleBasedAccessService.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\RoleBasedAccessService.cs",
+              "RelativeToolTip": "Gahar_Backend\\Services\\Implementations\\RoleBasedAccessService.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAMBdwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:03:45.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DepartmentPermissionService.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\DepartmentPermissionService.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Implementations\\DepartmentPermissionService.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\DepartmentPermissionService.cs",
+              "RelativeToolTip": "Gahar_Backend\\Services\\Implementations\\DepartmentPermissionService.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAIBJwH8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:03:38.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DataAccessService.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\DataAccessService.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Implementations\\DataAccessService.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\DataAccessService.cs",
+              "RelativeToolTip": "Gahar_Backend\\Services\\Implementations\\DataAccessService.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAABRwLAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:03:29.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "PermissionService.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\PermissionService.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Implementations\\PermissionService.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\PermissionService.cs",
+              "RelativeToolTip": "Gahar_Backend\\Services\\Implementations\\PermissionService.cs",
+              "ViewState": "AgIAAEwBAAAAAAAAAEBVwFABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:03:16.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\appsettings.json",
-              "RelativeDocumentMoniker": "Gahar_Backend\\appsettings.json",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\appsettings.json",
-              "RelativeToolTip": "Gahar_Backend\\appsettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-16T10:25:16.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "GLOBAL_RATE_LIMITING_DOCUMENTATION_INDEX.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_DOCUMENTATION_INDEX.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_DOCUMENTATION_INDEX.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_DOCUMENTATION_INDEX.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_DOCUMENTATION_INDEX.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:36:59.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "GLOBAL_RATE_LIMITING_VISUAL_GUIDE.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_VISUAL_GUIDE.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_VISUAL_GUIDE.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_VISUAL_GUIDE.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\GLOBAL_RATE_LIMITING_VISUAL_GUIDE.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKcBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:36:31.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "README_GLOBAL_RATE_LIMITING.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\README_GLOBAL_RATE_LIMITING.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\README_GLOBAL_RATE_LIMITING.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\README_GLOBAL_RATE_LIMITING.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\README_GLOBAL_RATE_LIMITING.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:35:58.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "PROJECT_WIDE_RATE_LIMITING_COMPLETE.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\PROJECT_WIDE_RATE_LIMITING_COMPLETE.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\PROJECT_WIDE_RATE_LIMITING_COMPLETE.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\PROJECT_WIDE_RATE_LIMITING_COMPLETE.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\PROJECT_WIDE_RATE_LIMITING_COMPLETE.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:35:32.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RateLimitController.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Controllers\\RateLimitController.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Controllers\\RateLimitController.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Controllers\\RateLimitController.cs",
-              "RelativeToolTip": "Gahar_Backend\\Controllers\\RateLimitController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:57:34.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IRateLimitService.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Interfaces\\IRateLimitService.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Interfaces\\IRateLimitService.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Interfaces\\IRateLimitService.cs",
-              "RelativeToolTip": "Gahar_Backend\\Services\\Interfaces\\IRateLimitService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:55:21.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RateLimitingMiddleware.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Middleware\\RateLimitingMiddleware.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Middleware\\RateLimitingMiddleware.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Middleware\\RateLimitingMiddleware.cs",
-              "RelativeToolTip": "Gahar_Backend\\Middleware\\RateLimitingMiddleware.cs",
-              "ViewState": "AgIAAPMAAAAAAAAAAABRwPYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:55:14.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "RateLimitAttribute.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Attributes\\RateLimitAttribute.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Attributes\\RateLimitAttribute.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Attributes\\RateLimitAttribute.cs",
-              "RelativeToolTip": "Gahar_Backend\\Attributes\\RateLimitAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T11:21:44.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "RATE_LIMITING_DOCUMENTATION_INDEX.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_DOCUMENTATION_INDEX.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_DOCUMENTATION_INDEX.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_DOCUMENTATION_INDEX.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_DOCUMENTATION_INDEX.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHABAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:25:17.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "RATE_LIMITING_DEPLOYMENT_READY.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_DEPLOYMENT_READY.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_DEPLOYMENT_READY.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_DEPLOYMENT_READY.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_DEPLOYMENT_READY.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:24:52.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "RATE_LIMITING_IMPLEMENTATION_CHECKLIST.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_CHECKLIST.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_CHECKLIST.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_CHECKLIST.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_CHECKLIST.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:24:22.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "RATE_LIMITING_QUICK_REFERENCE.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_QUICK_REFERENCE.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_QUICK_REFERENCE.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_QUICK_REFERENCE.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_QUICK_REFERENCE.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:23:55.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "RATE_LIMITING_NON_ADMIN_SUMMARY.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_SUMMARY.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_SUMMARY.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_SUMMARY.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_SUMMARY.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:23:38.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "RATE_LIMITING_NON_ADMIN_TESTING.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_TESTING.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_TESTING.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_TESTING.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_TESTING.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEECAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:23:12.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "RATE_LIMITING_NON_ADMIN_IMPLEMENTATION.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_IMPLEMENTATION.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_IMPLEMENTATION.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_IMPLEMENTATION.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_NON_ADMIN_IMPLEMENTATION.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T11:22:43.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "RateLimitService.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
-              "RelativeToolTip": "Gahar_Backend\\Services\\Implementations\\RateLimitService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:58:26.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "RATE_LIMITING_IMPLEMENTATION_COMPLETE.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_COMPLETE.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_COMPLETE.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_COMPLETE.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_IMPLEMENTATION_COMPLETE.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T10:59:28.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "RATE_LIMITING_TESTING_GUIDE.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_TESTING_GUIDE.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_TESTING_GUIDE.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_TESTING_GUIDE.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_TESTING_GUIDE.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T10:58:56.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RATE_LIMITING_FEATURE.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_FEATURE.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\RATE_LIMITING_FEATURE.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\RATE_LIMITING_FEATURE.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\RATE_LIMITING_FEATURE.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANQBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T10:58:01.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShortLink.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\Entities\\ShortLink.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Models\\Entities\\ShortLink.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\Entities\\ShortLink.cs",
-              "RelativeToolTip": "Gahar_Backend\\Models\\Entities\\ShortLink.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:36:36.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ShortLinkAnalytics.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\Entities\\ShortLinkAnalytics.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Models\\Entities\\ShortLinkAnalytics.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\Entities\\ShortLinkAnalytics.cs",
-              "RelativeToolTip": "Gahar_Backend\\Models\\Entities\\ShortLinkAnalytics.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:36:47.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ShortLinkConfiguration.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Data\\Configurations\\ShortLinkConfiguration.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Data\\Configurations\\ShortLinkConfiguration.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Data\\Configurations\\ShortLinkConfiguration.cs",
-              "RelativeToolTip": "Gahar_Backend\\Data\\Configurations\\ShortLinkConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:36:56.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FEATURE_10_SHORT_LINKS_QR_CODE.md",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\FEATURE_10_SHORT_LINKS_QR_CODE.md",
-              "RelativeDocumentMoniker": "Gahar_Backend\\docs\\FEATURE_10_SHORT_LINKS_QR_CODE.md",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\docs\\FEATURE_10_SHORT_LINKS_QR_CODE.md",
-              "RelativeToolTip": "Gahar_Backend\\docs\\FEATURE_10_SHORT_LINKS_QR_CODE.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOABAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-16T10:46:59.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "QrCodeService.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\QrCodeService.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Implementations\\QrCodeService.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\QrCodeService.cs",
-              "RelativeToolTip": "Gahar_Backend\\Services\\Implementations\\QrCodeService.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAMBdwKwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:44:14.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ShortLinkService.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\ShortLinkService.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Implementations\\ShortLinkService.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Implementations\\ShortLinkService.cs",
-              "RelativeToolTip": "Gahar_Backend\\Services\\Implementations\\ShortLinkService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:43:48.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ShortLinkMappingProfile.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Mappings\\ShortLinkMappingProfile.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Mappings\\ShortLinkMappingProfile.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Mappings\\ShortLinkMappingProfile.cs",
-              "RelativeToolTip": "Gahar_Backend\\Mappings\\ShortLinkMappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:42:08.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Program.cs",
               "RelativeDocumentMoniker": "Gahar_Backend\\Program.cs",
               "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Program.cs",
               "RelativeToolTip": "Gahar_Backend\\Program.cs",
-              "ViewState": "AgIAANYAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:39:41.203Z",
+              "WhenOpened": "2025-11-17T07:34:29.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ShortLinksController.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Controllers\\ShortLinksController.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Controllers\\ShortLinksController.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Controllers\\ShortLinksController.cs",
-              "RelativeToolTip": "Gahar_Backend\\Controllers\\ShortLinksController.cs",
-              "ViewState": "AgIAABIBAAAAAAAAAEBVwBYBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 50,
+              "Title": "PermissionsController.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Controllers\\PermissionsController.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Controllers\\PermissionsController.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Controllers\\PermissionsController.cs",
+              "RelativeToolTip": "Gahar_Backend\\Controllers\\PermissionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:39:25.776Z",
+              "WhenOpened": "2025-11-17T09:09:06.636Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IShortLinkService.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Interfaces\\IShortLinkService.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Interfaces\\IShortLinkService.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Interfaces\\IShortLinkService.cs",
-              "RelativeToolTip": "Gahar_Backend\\Services\\Interfaces\\IShortLinkService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 49,
+              "Title": "AccessControlFilters.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Filters\\AccessControlFilters.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Filters\\AccessControlFilters.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Filters\\AccessControlFilters.cs",
+              "RelativeToolTip": "Gahar_Backend\\Filters\\AccessControlFilters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:38:45.607Z",
+              "WhenOpened": "2025-11-17T09:08:46.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IQrCodeService.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Interfaces\\IQrCodeService.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\Interfaces\\IQrCodeService.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\Interfaces\\IQrCodeService.cs",
-              "RelativeToolTip": "Gahar_Backend\\Services\\Interfaces\\IQrCodeService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAIBYwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:38:18.464Z",
+              "DocumentIndex": 47,
+              "Title": "QUICK_START_ADVANCED_PERMISSIONS.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\QUICK_START_ADVANCED_PERMISSIONS.md",
+              "RelativeDocumentMoniker": "QUICK_START_ADVANCED_PERMISSIONS.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\QUICK_START_ADVANCED_PERMISSIONS.md",
+              "RelativeToolTip": "QUICK_START_ADVANCED_PERMISSIONS.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T09:05:31.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ShortLinkRepository.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Repositories\\Implementations\\ShortLinkRepository.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Repositories\\Implementations\\ShortLinkRepository.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Repositories\\Implementations\\ShortLinkRepository.cs",
-              "RelativeToolTip": "Gahar_Backend\\Repositories\\Implementations\\ShortLinkRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:38:09.977Z",
+              "DocumentIndex": 46,
+              "Title": "ADVANCED_PERMISSIONS_GUIDE.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\ADVANCED_PERMISSIONS_GUIDE.md",
+              "RelativeDocumentMoniker": "ADVANCED_PERMISSIONS_GUIDE.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\ADVANCED_PERMISSIONS_GUIDE.md",
+              "RelativeToolTip": "ADVANCED_PERMISSIONS_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKECAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T09:05:04.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IShortLinkRepository.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Repositories\\Interfaces\\IShortLinkRepository.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Repositories\\Interfaces\\IShortLinkRepository.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Repositories\\Interfaces\\IShortLinkRepository.cs",
-              "RelativeToolTip": "Gahar_Backend\\Repositories\\Interfaces\\IShortLinkRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 31,
+              "Title": "DepartmentAccessService.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\DepartmentAccessService.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Services\\DepartmentAccessService.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Services\\DepartmentAccessService.cs",
+              "RelativeToolTip": "Gahar_Backend\\Services\\DepartmentAccessService.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAEBVwNcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:37:53.542Z",
+              "WhenOpened": "2025-11-17T08:42:17.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ShortLinkDtos.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\DTOs\\ShortLinks\\ShortLinkDtos.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Models\\DTOs\\ShortLinks\\ShortLinkDtos.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\DTOs\\ShortLinks\\ShortLinkDtos.cs",
-              "RelativeToolTip": "Gahar_Backend\\Models\\DTOs\\ShortLinks\\ShortLinkDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:37:41.164Z",
+              "DocumentIndex": 37,
+              "Title": "QUICK_START_DEPARTMENTS.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\QUICK_START_DEPARTMENTS.md",
+              "RelativeDocumentMoniker": "QUICK_START_DEPARTMENTS.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\QUICK_START_DEPARTMENTS.md",
+              "RelativeToolTip": "QUICK_START_DEPARTMENTS.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:45:58.09Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ShortLinkAnalyticsConfiguration.cs",
-              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Data\\Configurations\\ShortLinkAnalyticsConfiguration.cs",
-              "RelativeDocumentMoniker": "Gahar_Backend\\Data\\Configurations\\ShortLinkAnalyticsConfiguration.cs",
-              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Data\\Configurations\\ShortLinkAnalyticsConfiguration.cs",
-              "RelativeToolTip": "Gahar_Backend\\Data\\Configurations\\ShortLinkAnalyticsConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 30,
+              "Title": "Form.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\Entities\\Form.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Models\\Entities\\Form.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\Entities\\Form.cs",
+              "RelativeToolTip": "Gahar_Backend\\Models\\Entities\\Form.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAIBXwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:37:04.24Z",
+              "WhenOpened": "2025-11-17T08:41:31.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 41,
+              "Title": "QUICK_REFERENCE.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\QUICK_REFERENCE.md",
+              "RelativeDocumentMoniker": "QUICK_REFERENCE.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\QUICK_REFERENCE.md",
+              "RelativeToolTip": "QUICK_REFERENCE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:48:00.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "START_WITH_DEPARTMENTS.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\START_WITH_DEPARTMENTS.md",
+              "RelativeDocumentMoniker": "START_WITH_DEPARTMENTS.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\START_WITH_DEPARTMENTS.md",
+              "RelativeToolTip": "START_WITH_DEPARTMENTS.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:47:36.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "COMPLETION_REPORT.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\COMPLETION_REPORT.md",
+              "RelativeDocumentMoniker": "COMPLETION_REPORT.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\COMPLETION_REPORT.md",
+              "RelativeToolTip": "COMPLETION_REPORT.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:46:54.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "API_ENDPOINTS_REFERENCE.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\API_ENDPOINTS_REFERENCE.md",
+              "RelativeDocumentMoniker": "API_ENDPOINTS_REFERENCE.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\API_ENDPOINTS_REFERENCE.md",
+              "RelativeToolTip": "API_ENDPOINTS_REFERENCE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:46:21.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Models\\Entities\\User.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\Entities\\User.cs",
+              "RelativeToolTip": "Gahar_Backend\\Models\\Entities\\User.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAMBbwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T08:41:21.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DEPARTMENT_SYSTEM_SUMMARY.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\DEPARTMENT_SYSTEM_SUMMARY.md",
+              "RelativeDocumentMoniker": "DEPARTMENT_SYSTEM_SUMMARY.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\DEPARTMENT_SYSTEM_SUMMARY.md",
+              "RelativeToolTip": "DEPARTMENT_SYSTEM_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:45:35.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DEPARTMENT_ACCESS_CONTROL.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\DEPARTMENT_ACCESS_CONTROL.md",
+              "RelativeDocumentMoniker": "DEPARTMENT_ACCESS_CONTROL.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\DEPARTMENT_ACCESS_CONTROL.md",
+              "RelativeToolTip": "DEPARTMENT_ACCESS_CONTROL.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:43:43.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Department.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Models\\Entities\\Department.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Models\\Entities\\Department.cs",
+              "RelativeToolTip": "Gahar_Backend\\Models\\Entities\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T08:41:18.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "FormsController.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Controllers\\FormsController.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Controllers\\FormsController.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Controllers\\FormsController.cs",
+              "RelativeToolTip": "Gahar_Backend\\Controllers\\FormsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T08:43:09.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "Gahar_Backend\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAIBJwN4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T08:42:52.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Gahar_Backend\\Data\\ApplicationDbContext.cs",
               "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Gahar_Backend\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:26:15.879Z",
+              "WhenOpened": "2025-11-17T08:42:37.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "test-users-login.html",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\test-users-login.html",
+              "RelativeDocumentMoniker": "test-users-login.html",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\test-users-login.html",
+              "RelativeToolTip": "test-users-login.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-17T08:04:32.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TEST_USERS_QUICK_REFERENCE.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS_QUICK_REFERENCE.md",
+              "RelativeDocumentMoniker": "TEST_USERS_QUICK_REFERENCE.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS_QUICK_REFERENCE.md",
+              "RelativeToolTip": "TEST_USERS_QUICK_REFERENCE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:11:21.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TEST_USERS_ADVANCED.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS_ADVANCED.md",
+              "RelativeDocumentMoniker": "TEST_USERS_ADVANCED.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS_ADVANCED.md",
+              "RelativeToolTip": "TEST_USERS_ADVANCED.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOkCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:15:42.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FILES_INDEX.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FILES_INDEX.md",
+              "RelativeDocumentMoniker": "FILES_INDEX.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FILES_INDEX.md",
+              "RelativeToolTip": "FILES_INDEX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:20:20.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "test-users-config.json",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\test-users-config.json",
+              "RelativeDocumentMoniker": "test-users-config.json",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\test-users-config.json",
+              "RelativeToolTip": "test-users-config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-17T08:04:06.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "login-test.ps1",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\login-test.ps1",
+              "RelativeDocumentMoniker": "login-test.ps1",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\login-test.ps1",
+              "RelativeToolTip": "login-test.ps1",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKISURBVDhPlVLdS1RBFP/dux/JrppKUVoISrRSbVGEBq4Z5ZPRk39A9FYPUQ89CUEv2WOC\u002BFRB9QcUPoQkBItUkAa\u002BpNZ\u002BGO2u3nbdVe/evevuzsydZmY/shehM/fMuefMnN/8zuFoEBIOh7m0\u002BwnnnPX39z/0\u002B/1PaiEVVFYCUEI4pYQzRpU6DlMqY9IuLCzwubk5llhP3lFJNdHlJoHkUl8NtG51XV0BIQShUEj/vrw6GY/Hb6qgEHXqOM6\u002BIFJs28b8/Ly86xUAL2vhvwzEVgXZ8984EzIycg1ng0H0BQLKr4tqoqiND18egqYJV\u002BjMu/fo7OpSvk0YvG4dLvFUhXI44j7hGtKGwW\u002BN3agW2ChB6PqGAV9bB1oCQUxveIHOHkwl3VjxdyN3vA/rh0/A1X0ShTJRjysAxphkrQAi0Rjgb8VyWUfcpoDLg/uXevDoQwTPI9t4Y5QQyxZgJBOkAbCXQc4uw\u002BQexPJlME3H7dkVdDV78HbsHJZWk1jL5pHezCG9kdr8B0BSkCzyxTLSjgcRqwKnrRWZHRuO7sLH1DZ2ShTRtAlqbsHKGJ8bAJTSBoMCZfhB3JiJb2EzmkDs7jBGX33Bs8VfOAgGZzsPapnIb\u002BVmGwD1ZEnhN/Xia7YEtruLIy1NuPJ6UXV\u002B6voZPBjshVe0Lp/NwNfanpK5brmZpinnRwEcE0n3Ojk8onkmaUGlVEKxQhBeXILf58Pj0258\u002B2TgQPuhhExRDCzLqvZArN5mDReabARdBYSaihjylzCgZREs/MRoB8HRbAzcyiGTSkRlrmJQLBZVCZpYVwcHlJUDVZ0r6dV9DafOX8Sa8RQvpieZzFXDMD4\u002BXp3X/5CJiQmRC/wBUOeA8MehIQsAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-11-17T08:03:54.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FINAL_README.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FINAL_README.md",
+              "RelativeDocumentMoniker": "FINAL_README.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FINAL_README.md",
+              "RelativeToolTip": "FINAL_README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:21:17.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "COMPLETE_TEST_USERS_SUMMARY.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\COMPLETE_TEST_USERS_SUMMARY.md",
+              "RelativeDocumentMoniker": "COMPLETE_TEST_USERS_SUMMARY.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\COMPLETE_TEST_USERS_SUMMARY.md",
+              "RelativeToolTip": "COMPLETE_TEST_USERS_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:19:30.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "README_TEST_USERS.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\README_TEST_USERS.md",
+              "RelativeDocumentMoniker": "README_TEST_USERS.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\README_TEST_USERS.md",
+              "RelativeToolTip": "README_TEST_USERS.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:18:50.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FINAL_IMPLEMENTATION_SUMMARY.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FINAL_IMPLEMENTATION_SUMMARY.md",
+              "RelativeDocumentMoniker": "FINAL_IMPLEMENTATION_SUMMARY.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FINAL_IMPLEMENTATION_SUMMARY.md",
+              "RelativeToolTip": "FINAL_IMPLEMENTATION_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:17:31.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TEST_USERS_IMPLEMENTATION.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS_IMPLEMENTATION.md",
+              "RelativeDocumentMoniker": "TEST_USERS_IMPLEMENTATION.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS_IMPLEMENTATION.md",
+              "RelativeToolTip": "TEST_USERS_IMPLEMENTATION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:16:24.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "login-test.sh",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\login-test.sh",
+              "RelativeDocumentMoniker": "login-test.sh",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\login-test.sh",
+              "RelativeToolTip": "login-test.sh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2025-11-17T08:03:34.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SWAGGER_ADMIN_ACCESS.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\SWAGGER_ADMIN_ACCESS.md",
+              "RelativeDocumentMoniker": "SWAGGER_ADMIN_ACCESS.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\SWAGGER_ADMIN_ACCESS.md",
+              "RelativeToolTip": "SWAGGER_ADMIN_ACCESS.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T07:37:18.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Utilities\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Utilities\\DataSeeder.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Utilities\\DataSeeder.cs",
+              "RelativeToolTip": "Gahar_Backend\\Utilities\\DataSeeder.cs",
+              "ViewState": "AgIAABkBAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T08:01:51.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TEST_USERS.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS.md",
+              "RelativeDocumentMoniker": "TEST_USERS.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\TEST_USERS.md",
+              "RelativeToolTip": "TEST_USERS.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T08:03:18.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SWAGGER_QUICK_START.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\SWAGGER_QUICK_START.md",
+              "RelativeDocumentMoniker": "SWAGGER_QUICK_START.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\SWAGGER_QUICK_START.md",
+              "RelativeToolTip": "SWAGGER_QUICK_START.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T07:38:00.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VISUAL_GUIDE.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\VISUAL_GUIDE.md",
+              "RelativeDocumentMoniker": "VISUAL_GUIDE.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\VISUAL_GUIDE.md",
+              "RelativeToolTip": "VISUAL_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T07:40:19.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "COMPLETION_CHECKLIST.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\COMPLETION_CHECKLIST.md",
+              "RelativeDocumentMoniker": "COMPLETION_CHECKLIST.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\COMPLETION_CHECKLIST.md",
+              "RelativeToolTip": "COMPLETION_CHECKLIST.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T07:41:21.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SwaggerAuthenticationMiddlewareExtensions.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Middleware\\SwaggerAuthenticationMiddlewareExtensions.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Middleware\\SwaggerAuthenticationMiddlewareExtensions.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Middleware\\SwaggerAuthenticationMiddlewareExtensions.cs",
+              "RelativeToolTip": "Gahar_Backend\\Middleware\\SwaggerAuthenticationMiddlewareExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T07:36:43.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "START_HERE.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\START_HERE.md",
+              "RelativeDocumentMoniker": "START_HERE.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\START_HERE.md",
+              "RelativeToolTip": "START_HERE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T07:42:02.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FINAL_SUMMARY.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FINAL_SUMMARY.md",
+              "RelativeDocumentMoniker": "FINAL_SUMMARY.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\FINAL_SUMMARY.md",
+              "RelativeToolTip": "FINAL_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T07:41:37.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SwaggerAuthenticationMiddleware.cs",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Middleware\\SwaggerAuthenticationMiddleware.cs",
+              "RelativeDocumentMoniker": "Gahar_Backend\\Middleware\\SwaggerAuthenticationMiddleware.cs",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\Gahar_Backend\\Middleware\\SwaggerAuthenticationMiddleware.cs",
+              "RelativeToolTip": "Gahar_Backend\\Middleware\\SwaggerAuthenticationMiddleware.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAEBVwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T07:36:40.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "README.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T07:40:53.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DOCUMENTATION_INDEX.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\DOCUMENTATION_INDEX.md",
+              "RelativeDocumentMoniker": "DOCUMENTATION_INDEX.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\DOCUMENTATION_INDEX.md",
+              "RelativeToolTip": "DOCUMENTATION_INDEX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T07:39:44.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CODE_CHANGES_REFERENCE.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\CODE_CHANGES_REFERENCE.md",
+              "RelativeDocumentMoniker": "CODE_CHANGES_REFERENCE.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\CODE_CHANGES_REFERENCE.md",
+              "RelativeToolTip": "CODE_CHANGES_REFERENCE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T07:39:12.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IMPLEMENTATION_SUMMARY.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\IMPLEMENTATION_SUMMARY.md",
+              "RelativeDocumentMoniker": "IMPLEMENTATION_SUMMARY.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\IMPLEMENTATION_SUMMARY.md",
+              "RelativeToolTip": "IMPLEMENTATION_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T07:38:51.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SWAGGER_API_EXAMPLES.md",
+              "DocumentMoniker": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\SWAGGER_API_EXAMPLES.md",
+              "RelativeDocumentMoniker": "SWAGGER_API_EXAMPLES.md",
+              "ToolTip": "F:\\Web Gahar\\bk\\Gahar_web_BackEnd\\SWAGGER_API_EXAMPLES.md",
+              "RelativeToolTip": "SWAGGER_API_EXAMPLES.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-17T07:38:22.819Z",
               "EditorCaption": ""
             }
           ]

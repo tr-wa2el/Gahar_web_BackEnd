@@ -72,6 +72,15 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<ITranslationService, TranslationService>();
 builder.Services.AddScoped<IAuditLogService, AuditLogService>();
 
+// Department Access Control Service
+builder.Services.AddScoped<IDepartmentAccessService, DepartmentAccessService>();
+
+// Advanced Permission Services
+builder.Services.AddScoped<IPermissionService, PermissionService>();
+builder.Services.AddScoped<IDataAccessService, DataAccessService>();
+builder.Services.AddScoped<IDepartmentPermissionService, DepartmentPermissionService>();
+builder.Services.AddScoped<IRoleBasedAccessService, RoleBasedAccessService>();
+
 // Feature 1: Page Builder Services
 builder.Services.AddScoped<IPageService, PageService>();
 
@@ -199,7 +208,14 @@ using (var scope = app.Services.CreateScope())
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+      options.SwaggerEndpoint("/swagger/v1/swagger.json", "Gahar Backend API v1");
+        options.DefaultModelsExpandDepth(2);
+        options.DefaultModelExpandDepth(2);
+        // Set default tag expansion
+  options.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.List);
+    });
 }
 
 app.UseHttpsRedirection();
@@ -210,6 +226,8 @@ app.UseRateLimiting(); // Rate Limiting Middleware - يجب أن يكون قبل
 
 // Exception Handling Middleware
 app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+app.UseSwaggerAuthentication(); // Add Swagger authentication middleware
 
 app.UseAuthentication();
 app.UseAuthorization();

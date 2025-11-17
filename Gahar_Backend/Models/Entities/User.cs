@@ -35,8 +35,14 @@ namespace Gahar_Backend.Models.Entities
 
   public DateTime? LockedUntil { get; set; }
 
+        /// <summary>
+     /// القسم التابع له المستخدم
+        /// </summary>
+        public Guid? DepartmentId { get; set; }
+        public Department? Department { get; set; }
+
         // Navigation Properties
         public ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
-        public ICollection<AuditLog> AuditLogs { get; set; } = new List<AuditLog>();
+     public ICollection<AuditLog> AuditLogs { get; set; } = new List<AuditLog>();
     }
 }

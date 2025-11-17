@@ -20,6 +20,9 @@ namespace Gahar_Backend.Data
         public DbSet<Language> Languages { get; set; }
      public DbSet<Translation> Translations { get; set; }
 
+        // Department Management (New)
+        public DbSet<Department> Departments { get; set; }
+
         // Feature 1: Page Builder
         public DbSet<Page> Pages { get; set; }
         public DbSet<PageBlock> PageBlocks { get; set; }

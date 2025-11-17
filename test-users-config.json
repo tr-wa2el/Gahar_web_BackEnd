@@ -1,0 +1,117 @@
+{
+  "testUsers": [
+    {
+      "id": 1,
+      "name": "Super Admin",
+      "email": "admin@gahar.sa",
+      "password": "Admin@123",
+"firstName": "Super",
+  "lastName": "Admin",
+      "role": "SuperAdmin",
+    "roleName": "مدير النظام",
+      "permissions": "✅ جميع الصلاحيات",
+      "swaggerAccess": true,
+      "description": "مدير النظام الأعلى - له كل الصلاحيات"
+    },
+    {
+      "id": 2,
+      "name": "Admin",
+      "email": "admin@example.com",
+      "password": "Admin@123",
+      "firstName": "محمد",
+      "lastName": "علي",
+      "role": "Admin",
+      "roleName": "مدير",
+      "permissions": "✅ جميع الصلاحيات ما عدا سجلات التدقيق",
+      "swaggerAccess": true,
+    "description": "مدير عادي - يمكنه الوصول لـ Swagger والعمليات الإدارية"
+    },
+    {
+      "id": 3,
+      "name": "Editor",
+      "email": "editor@example.com",
+      "password": "Editor@123",
+      "firstName": "فاطمة",
+      "lastName": "محمد",
+      "role": "Editor",
+      "roleName": "محرر",
+      "permissions": "✅ View, Create, Edit (بدون Delete)",
+    "swaggerAccess": false,
+    "description": "محرر محتوى - يمكنه إنشاء وتعديل المحتوى"
+    },
+    {
+      "id": 4,
+      "name": "Viewer",
+      "email": "viewer@example.com",
+   "password": "Viewer@123",
+      "firstName": "أحمد",
+      "lastName": "حسن",
+      "role": "Viewer",
+      "roleName": "مشاهد",
+      "permissions": "✅ View فقط",
+      "swaggerAccess": false,
+      "description": "مشاهد - يمكنه فقط مشاهدة المحتوى"
+    },
+    {
+      "id": 5,
+      "name": "Regular User",
+      "email": "user@example.com",
+      "password": "User@123",
+      "firstName": "سارة",
+      "lastName": "علي",
+      "role": "Viewer",
+    "roleName": "مستخدم عادي",
+    "permissions": "✅ View فقط",
+      "swaggerAccess": false,
+      "description": "مستخدم عادي - يمكنه فقط مشاهدة المحتوى"
+    }
+],
+  "endpoints": {
+    "login": "POST /api/auth/login",
+    "swagger": "GET /swagger/index.html",
+    "api": "GET /api/[controller]"
+  },
+  "testScenarios": [
+    {
+      "name": "Admin Swagger Access",
+      "description": "اختبار أن Admin يمكنه الوصول لـ Swagger",
+      "steps": [
+      "Login: admin@example.com / Admin@123",
+      "Copy accessToken",
+        "Visit http://localhost:5000/swagger/index.html",
+        "Click Authorize and paste token",
+        "Expected: ✅ Success"
+    ]
+    },
+    {
+      "name": "Non-Admin Swagger Access",
+      "description": "اختبار أن Editor لا يمكنه الوصول لـ Swagger",
+      "steps": [
+        "Login: editor@example.com / Editor@123",
+ "Copy accessToken",
+     "Visit http://localhost:5000/swagger/index.html",
+        "Click Authorize and paste token",
+        "Expected: ❌ 403 Forbidden"
+      ]
+    },
+    {
+      "name": "Permission-based Access",
+      "description": "اختبار الصلاحيات المختلفة",
+      "steps": [
+        "Login as Editor",
+        "Try Create operation: ✅ Should work",
+  "Try Delete operation: ❌ Should fail",
+      "Login as Viewer",
+        "Try Edit operation: ❌ Should fail"
+      ]
+    }
+  ],
+  "curl_examples": {
+    "login_admin": "curl -X POST 'http://localhost:5000/api/auth/login' -H 'Content-Type: application/json' -d '{\"email\":\"admin@example.com\",\"password\":\"Admin@123\"}'",
+    "login_editor": "curl -X POST 'http://localhost:5000/api/auth/login' -H 'Content-Type: application/json' -d '{\"email\":\"editor@example.com\",\"password\":\"Editor@123\"}'",
+    "test_api": "curl -H 'Authorization: Bearer YOUR_TOKEN' 'http://localhost:5000/api/endpoint'"
+},
+  "passwords_note": "All passwords follow the pattern: [RoleName]@123",
+  "created_date": "2024-01-15",
+  "status": "✅ Ready for Testing"
+}
